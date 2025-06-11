@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
+    <title>2RDC1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logoar.png" alt="Logo"
+                    class="navbar-logo">
+                <span class="navbar-title">EEEFM Alzira Ramos</span>
+            </a>
+
+            <ul class="navbar-nav" id="navbarNav">
+                <li><a href="index.html#noticias" class="nav-link">Notícias</a></li>
+                <li><a href="index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="index.html#equipe" class="nav-link">Equipe</a></li>
+                <li><a href="index.html#turmas" class="nav-link">Turmas</a></li>
+                <li><a href="index.html#redes" class="nav-link">Redes Sociais</a></li>
+                <li><a href="index.html#contato" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <main id="turma" class="turma">
+        <section class="horario">
+            <h2>Horário - 2RDC2</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>13:00 - 13:50</td>
+                        <td>Química</td>
+                        <td>Química</td>
+                        <td>Arquitetura e Montagem de Computadores</td>
+                        <td>Cultura Digital</td>
+                        <td>Matemática</td>
+                    </tr>
+                    <tr>
+                        <td>13:50 - 14:40</td>
+                        <td>Eletiva</td>
+                        <td>Português</td>
+                        <td>Geografia</td>
+                        <td>História</td>
+                        <td>Matemática</td>
+                    </tr>
+                    <tr>
+                        <td>14:40 - 15:30</td>
+                        <td>Eletiva</td>
+                        <td>Cultura Digital</td>
+                        <td>Projeto de Vida</td>
+                        <td>Matemática</td>
+                        <td>Biologia</td>
+                    </tr>
+                    <tr>
+                        <td>15:30 - 16:20</td>
+                        <td>Estudo Orientado</td>
+                        <td>Infraestrutura de Projeto de Redes</td>
+                        <td>Português</td>
+                        <td>Física</td>
+                        <td>Português</td>
+                    </tr>
+                    <tr>
+                        <td>16:20 - 16:40</td>
+                        <td colspan="5" style="text-align:center">Recreio</td>
+                    </tr>
+                    <tr>
+                        <td>16:40 - 17:30</td>
+                        <td>Português</td>
+                        <td>Práticas Experimentais</td>
+                        <td>Servidores Windows e Linux</td>
+                        <td>Geografia</td>
+                        <td>História</td>
+                    </tr>
+                    <tr>
+                        <td>17:30 - 18:20</td>
+                        <td>Biologia</td>
+                        <td>Matemática</td>
+                        <td>Infraestrutura de Projetos de Redes</td>
+                        <td>Infraestrutura de Projetos de Redes</td>
+                        <td>Servidores Windows e Linux</td>
+                    </tr>
+                    <tr>
+                        <td>18:20 - 19:10</td>
+                        <td>Arquitetura e Montagem de Computadores</td>
+                        <td>Arquitetura e Montagem de Computadores</td>
+                        <td>Banco de Dados</td>
+                        <td>Banco de Dados</td>
+                        <td>Física</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="horario-mobile">
+                <div class="horario-mobile-day">
+                    <h4>Segunda</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Química</li>
+                        <li>13:50 - 14:40 — Eletiva</li>
+                        <li>14:40 - 15:30 — Eletiva</li>
+                        <li>15:30 - 16:20 — Estudo Orientado</li>
+                        <li>16:40 - 17:30 — Português</li>
+                        <li>17:30 - 18:20 — Biologia</li>
+                        <li>18:20 - 19:10 — Arquitetura e Montagem de Computadores</li>
+                    </ul>
+                </div>
+                <div class="horario-mobile-day">
+                    <h4>Terça</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Química</li>
+                        <li>13:50 - 14:40 — Português</li>
+                        <li>14:40 - 15:30 — Cultura Digital</li>
+                        <li>15:30 - 16:20 — Infraestrutura de Projetos de Computadores</li>
+                        <li>16:40 - 17:30 — Práticas Experimentais</li>
+                        <li>17:30 - 18:20 — Matemática</li>
+                        <li>18:20 - 19:10 — Arquitetura e Montagem de Computadores</li>
+                    </ul>
+                </div>
+                <div class="horario-mobile-day">
+                    <h4>Quarta</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Arquitetura e Montagem de Computadores</li>
+                        <li>13:50 - 14:40 — Geografia</li>
+                        <li>14:40 - 15:30 — Projeto de Vida</li>
+                        <li>15:30 - 16:20 — Português</li>
+                        <li>16:40 - 17:30 — Servidores Windows e Linux</li>
+                        <li>17:30 - 18:20 — Infraestrutura de Projetos de Redes</li>
+                        <li>18:20 - 19:10 — Banco de Dados</li>
+                    </ul>
+                </div>
+                <div class="horario-mobile-day">
+                    <h4>Quinta</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Cultura Digital</li>
+                        <li>13:50 - 14:40 — História</li>
+                        <li>14:40 - 15:30 — Matemática</li>
+                        <li>15:30 - 16:20 — Física</li>
+                        <li>16:40 - 17:30 — Geografia</li>
+                        <li>17:30 - 18:20 — Infraestrutura de Projeto de Redes</li>
+                        <li>18:20 - 19:10 — Banco de Dados</li>
+                    </ul>
+                </div>
+                <div class="horario-mobile-day">
+                    <h4>Sexta</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Matemática</li>
+                        <li>13:50 - 14:40 — Matemática</li>
+                        <li>14:40 - 15:30 — Biologia</li>
+                        <li>15:30 - 16:20 — Português</li>
+                        <li>16:40 - 17:30 — História</li>
+                        <li>17:30 - 18:20 — Servidores Windows e Linux</li>
+                        <li>18:20 - 19:10 — Física</li>
+                    </ul>
+                </div>
+            </div>            
+        </section>
+
+        <section class="atividades">
+            <h2>Calendário de Atividades - 1ESP</h2>
+            <input type="date" id="dataAtividade" required>
+            <input type="text" id="descricaoAtividade" placeholder="Atividade" required>
+            <input type="text" id="professorAtividade" placeholder="Professor" required>
+            <input type="text" id="disciplinaAtividade" placeholder="Disciplina" required>
+            <button onclick="adicionarAtividade()">Adicionar</button>
+            <div id="listaAtividadesMobile"></div>
+            <div id="calendarioReal"></div>
+        </section>
+
+        <section id="professores">
+            <h2>Professores</h2>
+            <div class="lista-professores">
+                <div class="professor">
+                    <img src="img\raimunda.jpg" alt="Raimunda" />
+                    <h3>Raimunda</h3>
+                    <p>Disciplina: Cultura Digital</p>
+                </div>
+                <div class="professor">
+                    <img src="img\euvideo.jpg" alt="Foto do Professor Euvideo Ferreira Nascimento Neto" />
+                    <h3>Elvidio Ferreira Nascimento Neto</h3>
+                    <p>Disciplina: Banco de Dados e Arquitetura e Montagem de Computadores</p>
+                </div>
+                 <div class="professor">
+                    <img src="img\andreangelo.jpg" alt="Foto do Professor Andreangelo Patuzzo" />
+                    <h3>Andreângelo Patuzzo</h3>
+                    <p>Disciplina: Infraestrutura e Projeto de Redes, Servidores Windows e Linux</p>
+                </div>
+                <div class="professor">
+                    <img src="img\carlos.jpg" alt="Carlos Pereira" />
+                    <h3>Carlos Pereira</h3>
+                    <p>Disciplina: Física</p>
+                </div>
+                <div class="professor">
+                    <img src="img\leonardogeo.jpeg" alt="Leonardo Galiano" />
+                    <h3>Leonardo Galiano</h3>
+                    <p>Disciplina: Geografia</p>
+                </div>
+                <div class="professor">
+                    <img src="img\Luana.jpeg" alt="Luana" />
+                    <h3>Luana</h3>
+                    <p>Disciplina: Sociologia</p>
+                </div>
+                <div class="professor">
+                    <img src="img\ailton.jpg" alt="José Ailton Vargas da Rosa" />
+                    <h3>José Ailton Vargas da Rosa</h3>
+                    <p>Disciplina: Projeto de Vida e Filosofia</p>
+                </div>
+                <div class="professor">
+                    <img src="img\debora.jpg" alt="Debora" />
+                    <h3>Débora Aparecida Rocha Moreira</h3>
+                    <p>Disciplina: Química</p>
+                </div>
+                <div class="professor">
+                    <img src="img\leonardoh.jpeg" alt="Leonardo Faccini Bringer" />
+                    <h3>Leonardo Faccini Bringer</h3>
+                    <p>Disciplina: História</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 EEEFM Alzira Ramos. Todos os direitos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="index.html#">Início</a></li>
+                    <li><a href="index.html#noticias">Notícias</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="index.html#equipe">Equipe</a></li>
+                    <li><a href="index.html#turmas">Turmas</a></li>
+                    <li><a href="index.html#redes">Redes Sociais</a></li>
+                    <li><a href="index.html#contato">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
