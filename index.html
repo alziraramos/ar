@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
+    <title>EEEFM Alzira Ramos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">
+                <img src="img/logoar.png" alt="Logo"
+                    class="navbar-logo">
+                <span class="navbar-title">EEEFM Alzira Ramos</span>
+            </a>
+
+            <ul class="navbar-nav" id="navbarNav">
+                <li><a href="#noticias" class="nav-link">Notícias</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#equipe" class="nav-link">Equipe</a></li>
+                <li><a href="#turmas" class="nav-link">Turmas</a></li>
+                <li><a href="#redes" class="nav-link">Redes Sociais</a></li>
+                <li><a href="#contato" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1><strong>EEEFM Alzira Ramos</strong></h1>
+                <p>Educação de qualidade para um futuro brilhante.</p>
+                <a href="#sobre" class="btn btn-outline">Vamos Lá</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- News Section -->
+    <section class="section" id="noticias">
+        <div class="container">
+            <h2 class="section-title">Notícias Recentes</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="img/olimpiada-2.png" alt="Olimpíada de Geografia">
+                    <div class="news-card-content">
+                        <h3>Olimpíada de Geografia</h3>
+                        <p class="news-date">Segunda, 02 de Junho de 2025</p>
+                        <p>Escola Alzira Ramos lança projeto para disputar a Olimpíada Brasileira de Geografia.</p>
+                        <a href="noticia.html?id=1" class="btn btn-primary">Veja</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="img/vereadores.jpg" alt="Vereadores">
+                    <div class="news-card-content">
+                        <h3>Passeio Pedagógico à Câmara dos Vereadores</h3>
+                        <p class="news-date">Segunda, 02 de Junho de 2025</p>
+                        <p>Alunos da Eletiva Cidade Acessível Conhecem o Processo Legislativo</p>
+                        <a href="noticia.html?id=2" class="btn btn-primary">Veja</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="img/xadrez.jpg" alt="xadrez">
+                    <div class="news-card-content">
+                        <h3>Lançamento do Clube de Xadrez</h3>
+                        <p class="news-date">Terça-feira, 28 de Maio de 2025</p>
+                        <p>Clube de Xadrez estimula lógica, foco e estratégia com partidas oficiais.</p>
+                        <a href="noticia.html?id=3" class="btn btn-primary">Veja</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="img/volei.jpg" alt="volei">
+                    <div class="news-card-content">
+                        <h3>Formação do time de vôlei feminino</h3>
+                        <p class="news-date">Terça-feira, 03 de Junho de 2025</p>
+                        <p>Primeira equipe feminina de vôlei promove inclusão, esporte e trabalho em equipe.</p>
+                        <a href="noticia.html?id=4" class="btn btn-primary">Veja</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="img/quadra.jpg" alt="quadra">
+                    <div class="news-card-content">
+                        <h3>Melhorias na Quadra Esportiva</h3>
+                        <p class="news-date">Terça-feira, 03 de Junho de 2025</p>
+                        <p>Melhorias na estrutura tornam a escola mais segura, acolhedora e esportiva.</p>
+                        <a href="noticia.html?id=5" class="btn btn-primary">Veja</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="img/quadrilha.jpg" alt="quadrilha">
+                    <div class="news-card-content">
+                        <h3>Festa Cultural!</h3>
+                        <p class="news-date">Terça-feira, 03 de Junho de 2025</p>
+                        <p>Festa Junina da Escola Alzira Ramos celebra a cultura e convida toda a comunidade.</p>
+                        <a href="noticia.html?id=6" class="btn btn-primary">Veja</a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="img/salamaker2.jpeg" alt="sala maker">
+                    <div class="news-card-content">
+                        <h3>Escola Alzira Ramos inaugura Sala Maker e aposta em inovação no ensino</h3>
+                        <p class="news-date">Segunda-feira, 09 de Junho de 2025</p>
+                        <p>A EEEFM Alzira Ramos inaugura uma Sala Maker para promover a inovação, criatividade e aprendizado prático dos alunos com tecnologia e projetos interdisciplinares.</p>
+                        <a href="noticia.html?id=7" class="btn btn-primary">Veja</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <div class="container-projetos">
+            <div class="galeria">
+                <img src="img/deborapadlet.png" onclick="selecionarProjeto('professoraDebora')" alt="Projeto 1" />
+                <img src="img/wladimirpadlet.png" onclick="selecionarProjeto('professorWladimir')"  alt="Projeto 2" />
+                <img src="img/grazianipadlet.png" onclick="selecionarProjeto('professorGraziani')"  alt="Projeto 3" />
+                <img src="img/dayarapadlet.png" onclick="selecionarProjeto('professoraDayara')"  alt="Projeto 4" />
+                <img src="img/leonardogeopadlet.png" onclick="selecionarProjeto('professorLeonardo')"  alt="Projeto 5" />
+                <img src="img/jozipadlet.png" onclick="selecionarProjeto('professoraJozi')"  alt="Projeto 6" />
+            </div>
+        </div>
+
+        <div class="loop-frase">
+            <div class="frase">
+                <span>Projetos Inovadores • Equipe Dedicada • Projetos Inovadores • Equipe Dedicada • Projetos
+                    Inovadores • Equipe Dedicada • Projetos Inovadores • Equipe Dedicada • Projetos Inovadores • Equipe
+                    Dedicada •</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1594312915251-48db9280c8f1?w=600" alt="Nossa História"
+                        class="about-image">
+                </div>
+                <div class="about-content">
+                    <h2>Nossa História</h2>
+                    <p>A Escola Alzira Ramos carrega em seu nome uma homenagem à matriarca de uma família que teve papel
+                        fundamental na formação do bairro onde a escola está localizada. Alzira Ramos foi a mãe do
+                        advogado aposentado Nélson Ramos, uma figura conhecida na região. A área onde hoje está o bairro
+                        — e também a escola — era antigamente uma grande fazenda de gado pertencente à família Ramos.
+                    </p>
+
+                    <p> o tempo, os terrenos da antiga fazenda foram sendo divididos, vendidos e ocupados, dando
+                        origem ao bairro que cresceu com o nome de Alzira Ramos. A escolha do nome foi uma forma de
+                        preservar a memória da mulher que, segundo familiares, sempre demonstrou carinho, generosidade e
+                        senso de comunidade.</p>
+
+                    <p>A escola nasceu como uma extensão do desenvolvimento urbano do bairro. Sua fundação veio da
+                        necessidade de oferecer educação pública de qualidade para os moradores da região em
+                        crescimento. Assim como o bairro, a escola representa um espaço de memória, resistência e
+                        transformação. Ao longo dos anos, tem sido lugar de aprendizado, convivência e acolhimento para
+                        centenas de crianças, adolescentes e suas famílias.</p>
+
+                    <p> Hoje, a Escola Alzira Ramos se orgulha de manter viva essa história, não apenas pelo nome que
+                        carrega, mas por continuar sendo um pilar na formação de cidadãos conscientes, respeitosos e
+                        comprometidos com a comunidade — os mesmos valores que marcaram a vida de Alzira Ramos e sua
+                        família.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe">
+        <div class="container">
+            <h2 class="section-title">Equipe</h2>
+            <div class="galeria-equipe">
+                <div class="membro">
+                    <img src="img/Vagner.jpeg" alt="Diretor">
+                    <p>Diretor Vagner Braga de Assis</p>
+                </div>
+                <div class="membro">
+                    <img src="img/claudia.jpg" alt="Coordenadora Pedagoga">
+                    <p>Coordenadora Pedagoga Cláudia</p>
+                </div>
+                <div class="membro">
+                    <img src="img/simone.jpg" alt="Pedagoga">
+                    <p>Pedagoga Simone</p>
+                </div>
+                <div class="membro">
+                    <img src="img/ritap.jpg" alt="Pedagoga">
+                    <p>Pedagoga Rita de Cássia Pinto da Costa</p>
+                </div>
+                <div class="membro">
+                    <img src="img/marilza.jpg" alt="Coordenadora">
+                    <p>Coordenadora Marilza de Souza Martins</p>
+                </div>
+                <div class="membro">
+                    <img src="img/rita.jpg" alt="Coordenadora">
+                    <p>Coordenadora Rita de Cássia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="turmas">
+        <div class="container">
+            <h2 class="section-title">Turmas</h2>
+            <div class="galeria-turmas">
+                <div class="turma-index">
+                    <a href="1esp.html">
+                        <img src="img/1esp.jpg" alt="1ESP">
+                    </a>
+                </div>
+                <div class="turma-index">
+                    <a href="1ipi1.html">
+                        <img src="img/1ipi1.png" alt="1IPI1">
+                    </a>
+                </div>
+                <div class="turma-index">
+                    <a href="1ipi2.html">
+                        <img src="img/1ipi2.jpg" alt="1IPI2">
+                    </a>
+                </div>
+                <div class="turma-index">
+                    <a href="2ipi1.html">
+                        <img src="img/2ipi1.png" alt="2IPI1">
+                    </a>
+                </div>
+                <div class="turma-index">
+                    <a href="2ipi2.html">
+                        <img src="img/2ipi2.png" alt="2IPI2">
+                    </a>
+                </div>
+                <div class="turma-index">
+                    <a href="3ipi1.html">
+                        <img src="img/3ipi1.jpg" alt="3IPI1">
+                    </a>
+                </div>
+                <div class="turma-index">
+                    <a href="3ipi2.html">
+                        <img src="img/3ipi2.png" alt="3IPI2">
+                    </a>
+                </div>
+                <div class="turma-index">
+                    <a href="2rdc1.html">
+                        <img src="img/2rdc1.jpg" alt="2RDC1">
+                    </a>
+                </div>
+                <div class="turma-index">
+                    <a href="2rdc2.html">
+                        <img src="img/2rdc2.png" alt="2RDC2">
+                    </a>
+                </div>
+                <div class="turma-index">
+                    <a href="3rdc.html">
+                        <img src="img/3rdc1.jpg" alt="3RDC">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social -->
+    <section class="section" id="redes">
+        <div class="container">
+            <h2 class="section-title">Siga Nossas Redes</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/eeefmalziraramos/" class="social-link">
+                    <img src="img/insta.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section" id="contato">
+        <div class="container">
+            <h2 class="section-title">Contatos Úteis</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Telefone</h3>
+                    <p><a href="tel:+552733166460" style="color: inherit; text-decoration: none;">(27) 3316-6460</a>
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p><a href="mailto:escolaalziraramos@sedu.es.gov.br"
+                            style="color: inherit; text-decoration: none;">escolaalziraramos@sedu.es.gov.br</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Endereço</h3>
+                    <p>Av. Principal, Sn - Rio Marinho, Cariacica - ES, 29140-000</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Horários</h3>
+                    <p>Seg-Sex: 7h-19h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 EEEFM Alzira Ramos. Todos os direitos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#turmas">Turmas</a></li>
+                    <li><a href="#redes">Redes Sociais</a></li>
+                    <li><a href="#contato">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        function selecionarProjeto(id) {
+            localStorage.setItem("projetoSelecionado", id);
+            window.location.href = "padlet.html";
+        }
+    </script>
+</body>
+
+</html>
