@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewPortuguês" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
+    <title>1IPI2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logoar.png" alt="Logo"
+                    class="navbar-logo">
+                <span class="navbar-title">EEEFM Alzira Ramos</span>
+            </a>
+
+            <ul class="navbar-nav" id="navbarNav">
+                <li><a href="index.html#noticias" class="nav-link">Notícias</a></li>
+                <li><a href="index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="index.html#equipe" class="nav-link">Equipe</a></li>
+                <li><a href="index.html#turmas" class="nav-link">Turmas</a></li>
+                <li><a href="index.html#redes" class="nav-link">Redes Sociais</a></li>
+                <li><a href="index.html#contato" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <main id="turma" class="turma">
+        <section class="horario">
+            <h2>Horário - 1IPI2</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>13:00 - 13:50</td>
+                        <td>Português</td>
+                        <td>Matemática</td>
+                        <td>Artes</td>
+                        <td>Higiene, Saúde e Segurança</td>
+                        <td>Algoritmo e Lógica de Programação</td>
+                    </tr>
+                    <tr>
+                        <td>13:50 - 14:40</td>
+                        <td>Eletiva</td>
+                        <td>Matemática</td>
+                        <td>Filosofia</td>
+                        <td>Filosofia</td>
+                        <td>Português</td>
+                    </tr>
+                    <tr>
+                        <td>14:40 - 15:30</td>
+                        <td>Eletiva</td>
+                        <td>Química</td>
+                        <td>Educação Física</td>
+                        <td>Química</td>
+                        <td>Artes</td>
+                    </tr>
+                    <tr>
+                        <td>15:30 - 16:20</td>
+                        <td>Estudo Orientado</td>
+                        <td>Algoritmo e Lógica de Programação</td>
+                        <td>Educação Física</td>
+                        <td>Projeto de Vida</td>
+                        <td>Inglês</td>
+                    </tr>
+                    <tr>
+                        <td>16:20 - 16:40</td>
+                        <td colspan="5" style="text-align:center">Recreio</td>
+                    </tr>
+                    <tr>
+                        <td>16:40 - 17:30</td>
+                        <td>Matemática</td>
+                        <td>Sistemas Operacionais</td>
+                        <td>Matemática</td>
+                        <td>Física</td>
+                        <td>Física</td>
+                    </tr>
+                    <tr>
+                        <td>17:30 - 18:20</td>
+                        <td>Sociologia</td>
+                        <td>Português</td>
+                        <td>Sociologia</td>
+                        <td>Algoritmo e Lógica de Programação</td>
+                        <td>Português</td>
+                    </tr>
+                    <tr>
+                        <td>18:20 - 19:10</td>
+                        <td>Práticas Experimentais</td>
+                        <td>Português</td>
+                        <td>Inglês</td>
+                        <td>Sistemas Operacionais</td>
+                        <td>Matemática</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="horario-mobile">
+                <div class="horario-mobile-day">
+                    <h4>Segunda</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Português</li>
+                        <li>13:50 - 14:40 — Eletiva</li>
+                        <li>14:40 - 15:30 — Eletiva</li>
+                        <li>15:30 - 16:20 — Estudo Orientado</li>
+                        <li>16:40 - 17:30 — Matemática</li>
+                        <li>17:30 - 18:20 — Sociologia</li>
+                        <li>18:20 - 19:10 — Práticas Experimentais</li>
+                    </ul>
+                </div>
+                <div class="horario-mobile-day">
+                    <h4>Terça</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Matemática</li>
+                        <li>13:50 - 14:40 — Matemática</li>
+                        <li>14:40 - 15:30 — Química</li>
+                        <li>15:30 - 16:20 — Algoritmo e Lógica de Programação</li>
+                        <li>16:40 - 17:30 — Sistemas Operacionais</li>
+                        <li>17:30 - 18:20 — Português</li>
+                        <li>18:20 - 19:10 — Português</li>
+                    </ul>
+                </div>
+                <div class="horario-mobile-day">
+                    <h4>Quarta</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Artes</li>
+                        <li>13:50 - 14:40 — Filosofia</li>
+                        <li>14:40 - 15:30 — Educação Física</li>
+                        <li>15:30 - 16:20 — Educação Física</li>
+                        <li>16:40 - 17:30 — Matemática</li>
+                        <li>17:30 - 18:20 — Sociologia</li>
+                        <li>18:20 - 19:10 — Inglês</li>
+                    </ul>
+                </div>
+                <div class="horario-mobile-day">
+                    <h4>Quinta</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Higiene, Saúde e Segurança</li>
+                        <li>13:50 - 14:40 — Filosofia</li>
+                        <li>14:40 - 15:30 — Química</li>
+                        <li>15:30 - 16:20 — Projeto de Vida</li>
+                        <li>16:40 - 17:30 — Física</li>
+                        <li>17:30 - 18:20 — Algoritmo e Lógica de Programação</li>
+                        <li>18:20 - 19:10 — Sistemas Operacionais</li>
+                    </ul>
+                </div>
+                <div class="horario-mobile-day">
+                    <h4>Sexta</h4>
+                    <ul>
+                        <li>13:00 - 13:50 — Algoritmo e Lógica de Programação</li>
+                        <li>13:50 - 14:40 — Português</li>
+                        <li>14:40 - 15:30 — Artes</li>
+                        <li>15:30 - 16:20 — Inglês</li>
+                        <li>16:40 - 17:30 — Física</li>
+                        <li>17:30 - 18:20 — Português</li>
+                        <li>18:20 - 19:10 — Matemática</li>
+                    </ul>
+                </div>
+            </div>            
+        </section>
+
+        <section class="atividades">
+            <h2>Calendário de Atividades - 1ESP</h2>
+            <input type="date" id="dataAtividade" required>
+            <input type="text" id="descricaoAtividade" placeholder="Atividade" required>
+            <input type="text" id="professorAtividade" placeholder="Professor" required>
+            <input type="text" id="disciplinaAtividade" placeholder="Disciplina" required>
+            <button onclick="adicionarAtividade()">Adicionar</button>
+            <div id="listaAtividadesMobile"></div>
+            <div id="calendarioReal"></div>
+        </section>
+
+        <section id="professores">
+            <h2>Professores</h2>
+            <div class="lista-professores">
+                <div class="professor">
+                    <img src="img\luiza.jpg" alt="Luiza Alencar" />
+                    <h3>Luiza de Alencar</h3>
+                    <p>Disciplina: Algoritmo e Lógica de Programação</p>
+                </div>
+                <div class="professor">
+                    <img src="img\raimunda.jpg" alt="Raimunda" />
+                    <h3>Raimunda</h3>
+                    <p>Disciplina: Sistema Operacionais</p>
+                </div>
+                <div class="professor">
+                    <img src="img\carlos.jpg" alt="Carlos Pereira" />
+                    <h3>Carlos Pereira</h3>
+                    <p>Disciplina: Física</p>
+                </div>
+                <div class="professor">
+                    <img src="img\genecy.jpg" alt="Genecy Peges" />
+                    <h3>Genecy Peges</h3>
+                    <p>Disciplina: Inglês</p>
+                </div>
+                <div class="professor">
+                    <img src="img\Luana.jpeg" alt="Luana" />
+                    <h3>Luanna Ferreira Theodoro Teixeira</h3>
+                    <p>Disciplina: Sociologia </p>
+                </div>
+                <div class="professor">
+                    <img src="img\ailton.jpg" alt="José Ailton Vargas da Rosa" />
+                    <h3>José Ailton Vargas da Rosa</h3>
+                    <p>Disciplina: Projeto de Vida e Filosofia</p>
+                </div>
+                <div class="professor">
+                    <img src="img\debora.jpg" alt="Debora" />
+                    <h3>Débora Aparecida Rocha Moreira</h3>
+                    <p>Disciplina: Química </p>
+                </div>
+                <div class="professor">
+                    <img src="img\wall.jpeg" alt="Walldimara" />
+                    <h3>Walldimara de Souza</h3>
+                    <p>Disciplina: Artes </p>
+                </div>
+                <div class="professor">
+                    <img src="img\erika.jpg" alt="Erika" />
+                    <h3>Érica da Silva Ribeiro</h3>
+                    <p>Disciplina: Português </p>
+                </div>
+                <div class="professor">
+                    <img src="img\leonardoh.jpeg" alt="Leonardo Faccini Bringer" />
+                    <h3>Leonardo Faccini Bringer</h3>
+                    <p>Disciplina: História</p>
+                </div>
+                <div class="professor">
+                    <img src="img\michelly.jpg" alt="Michely de Menezes Garcia Vilet" />
+                    <h3>Michely de Menezes Garcia Vilet</h3>
+                    <p>Disciplina: Educação Fisica</p>
+                </div>
+                <div class="professor">
+                    <img src="img\joao.jpg" alt="Foto do ProfessoraCarla João Victor" />
+                    <h3>João Victor</h3>
+                    <p>Disciplina: Matemática</p>
+                </div>
+                <div class="professor">
+                    <img src="img\neia.jpg" alt="Nea" />
+                    <h3>Nea</h3>
+                    <p>Professora AEE</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 EEEFM Alzira Ramos. Todos os direitos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="index.html#">Início</a></li>
+                    <li><a href="index.html#noticias">Notícias</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="index.html#equipe">Equipe</a></li>
+                    <li><a href="index.html#turmas">Turmas</a></li>
+                    <li><a href="index.html#redes">Redes Sociais</a></li>
+                    <li><a href="index.html#contato">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
