@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
+    <title>Padlet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logoar.png" alt="Logo" class="navbar-logo">
+                <span class="navbar-title">EEEFM Alzira Ramos</span>
+            </a>
+
+            <ul class="navbar-nav" id="navbarNav">
+                <li><a href="index.html#noticias" class="nav-link">Notícias</a></li>
+                <li><a href="index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="index.html#equipe" class="nav-link">Equipe</a></li>
+                <li><a href="index.html#turmas" class="nav-link">Turmas</a></li>
+                <li><a href="index.html#redes" class="nav-link">Redes Sociais</a></li>
+                <li><a href="index.html#contato" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+    <main id="main">
+        <h1 id="professorProjeto">Projeto</h1>
+        <div class="professor-padlet" id="nomeProfessor">Professor(a):</div>
+        <div class="conteudo" id="conteudoProjeto">Carregando conteúdo...</div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 EEEFM Alzira Ramos. Todos os direitos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="index.html#">Início</a></li>
+                    <li><a href="index.html#noticias">Notícias</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="index.html#equipe">Equipe</a></li>
+                    <li><a href="index.html#turmas">Turmas</a></li>
+                    <li><a href="index.html#redes">Redes Sociais</a></li>
+                    <li><a href="index.html#contato">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
