@@ -168,7 +168,7 @@ const noticias = [
         id: 1,
         professor: "Olimpíada de Geografia",
         data: "Publicado em 02/06/2025",
-        imagem: "img/olimpiada-2.png",
+        imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/olimpiada-2.png",
         conteudo: `Escola Alzira Ramos Lança Projeto para Participar da Olimpíada Brasileira de Geografia, iniciativa do professor Leonardo busca incentivar o aprendizado e destacar a escola no cenário educacional.
 
 A Escola Alzira Ramos acaba de lançar um projeto pedagógico inovador com foco na participação dos alunos na Olimpíada Brasileira de Geografia (OBG). A iniciativa, idealizada pelo professor Leonardo, tem como principal objetivo estimular o interesse dos estudantes pela disciplina e criar uma cultura de valorização do conhecimento científico dentro da instituição.
@@ -188,7 +188,7 @@ O projeto marca um passo importante no compromisso da Escola Alzira Ramos com a 
         id: 2,
         professor: "Passeio Pedagógico à Câmara dos Vereadores",
         data: "Publicado em 02/06/2025",
-        imagem: "img/vereadores.jpg",
+        imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/vereadores.jpg",
         conteudo: `Na segunda-feira, 26 de maio, os alunos da nossa escola tiveram a oportunidade de participar de um passeio pedagógico à Câmara dos Vereadores. O evento é especialmente significativo para os estudantes da eletiva Cidade Acessível, que contaram com a presença de muitos alunos do Atendimento Educacional Especializado (AEE).
 
 O passeio foi dirigido pelo professor Leonardo, que acompanhou os alunos durante toda a visita. O vereador Jadz esteve recebendo os estudantes no local, proporcionando uma experiência única de imersão no ambiente político. Durante a visita, os alunos tiveram a oportunidade de conhecer o espaço interno da câmara, assistir a uma sessão plenária e visitar os gabinetes dos vereadores.
@@ -203,28 +203,28 @@ Ficamos muito animados com esta oportunidade e esperamos que os alunos aproveite
         id: 3,
         professor: "Lançamento do Clube de Xadrez",
         data: "Publicado em 03/06/2025",
-        imagem: "img/xadrez.jpg",
+        imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/xadrez.png",
         conteudo: `A Escola Alzira Ramos inaugura seu novo Clube de Xadrez, com o objetivo de estimular o raciocínio lógico, a concentração e a estratégia entre os alunos. O clube proporciona um espaço para que os estudantes desenvolvam habilidades intelectuais e aprendam a competir de forma saudável. Para isso, a escola adquiriu relógios oficiais de xadrez, que serão usados nas partidas e treinamentos, garantindo mais profissionalismo e dinamismo às atividades.`
     },
     {
         id: 4,
         professor: "Formação do time de vôlei feminino",
         data: "Publicado em 03/06/2025",
-        imagem: "img/volei.jpg",
+        imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/volei.jpg",
         conteudo: `A escola também comemora a formação da sua primeira equipe feminina de vôlei. As alunas já estão em fase de treinamento, sob a supervisão da professora de educação física Michely, preparando-se para participar das competições escolares. Essa iniciativa valoriza a inclusão e o incentivo à prática esportiva entre as meninas, promovendo disciplina, trabalho em equipe e fortalecimento do espírito esportivo.`
     },
     {
         id: 5,
         professor: "Melhorias na Quadra Esportiva",
         data: "Publicado em 03/06/2025",
-        imagem: "img/quadra.jpg",
+        imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/quadra.jpg",
         conteudo: `Pequenos reparos foram realizados na quadra da escola para melhorar o ambiente de prática esportiva. Além disso, foi feita a pintura do lado de fora da escola e houve reorganização do espaço, que agora está mais seguro e confortável para os alunos. Essas melhorias contribuem para um ambiente mais agradável, facilitando o desenvolvimento de diferentes modalidades esportivas e incentivando a participação dos estudantes.`
     },
     {
         id: 6,
         professor: "Festa Cultural",
         data: "Publicado em 03/06/2025",
-        imagem: "img/quadrilha.jpg",
+        imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/quadrilha.jpg",
         conteudo: `A Escola Alzira Ramos já está em clima de festa! Com muita animação, tradição e espírito de coletividade, a escola anuncia a realização de sua tradicional Festa Junina, que neste ano será ainda mais especial. Marcando o encerramento do semestre letivo antes das férias escolares, o evento será uma grande Festa Cultural Junina e estará aberto à participação de toda a comunidade.
 
 A festividade está sendo organizada com muito carinho por professores, funcionários, alunos e suas famílias, e promete ser um momento inesquecível de integração e celebração. Além de trazer os elementos clássicos da cultura junina, como comidas típicas, danças, brincadeiras e decoração caipira, a festa também contará com apresentações culturais preparadas pelos próprios estudantes ao longo das últimas semanas.
@@ -251,7 +251,7 @@ Todos estão convidados a vestir seu traje caipira, trazer o sorriso no rosto e 
         id: 7,
         professor: "Escola Alzira Ramos inaugura Sala Maker e aposta em inovação no ensino",
         data: "Publicado em 09/06/2025",
-        imagem: "img/salamaker1.jpeg",
+        imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/salamaker1.jpeg",
         conteudo: `Na próxima semana, a Escola Estadual de Ensino Fundamental e Médio Alzira Ramos dará um importante passo rumo à inovação educacional com a inauguração oficial da sua Sala Maker. O espaço foi criado para estimular a criatividade, o pensamento crítico e o trabalho colaborativo entre os estudantes, através de atividades práticas ligadas à tecnologia, robótica, artes e ciência.
 
 Com computadores, impressora 3D, kits de robótica e materiais diversos para construção, a Sala Maker será um ambiente de experimentação, onde os alunos poderão desenvolver projetos interdisciplinares e aplicar, de forma concreta, os conhecimentos adquiridos em sala de aula.
@@ -559,3 +559,21 @@ if (projeto) {
     document.getElementById("professorProjeto").textContent = "Projeto não encontrado";
     document.getElementById("conteudoProjeto").textContent = "Verifique se a seleção foi feita corretamente no index.html.";
 }
+
+const carrossel = document.querySelector('.carrossel');
+const setaEsquerda = document.querySelector('.esquerda');
+const setaDireita = document.querySelector('.direita');
+
+setaEsquerda.addEventListener('click', () => {
+    carrossel.scrollBy({
+        left: -320,
+        behavior: 'smooth'
+    });
+});
+
+setaDireita.addEventListener('click', () => {
+    carrossel.scrollBy({
+        left: 320,
+        behavior: 'smooth'
+    });
+});
