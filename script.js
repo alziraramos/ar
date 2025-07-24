@@ -262,17 +262,6 @@ A inauguração acontecerá nesta sexta-feira, às 10h, com a presença de profe
     }
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Mantém a parte do calendário das turmas, se ainda for usada:
-    const turmas = ["1ESP", "1IPI1", "1IPI2", "2IPI1", "2IPI2", "3IPI1", "3IPI2", "2RDC1", "2RDC2", "3RDC"];
-    const calendarioContainer = document.getElementById("calendarios-turmas");
-    turmas.forEach(turma => {
-        const div = document.createElement("div");
-        div.innerHTML = `<h4>${turma}</h4><textarea rows="5" cols="50" placeholder="Atividades e datas para ${turma}"></textarea>`;
-        calendarioContainer.appendChild(div);
-    });
-});
-
 function toggleMobileMenu() {
     const nav = document.getElementById("navbarNav");
     nav.classList.toggle("active");
@@ -577,3 +566,4 @@ setaDireita.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+

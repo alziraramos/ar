@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
     <title>EEEFM Alzira Ramos</title>
-    <link rel="icon" href="img/logoar.png" type="image/png">
+    <link rel="icon" href="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,7 +17,7 @@
     <nav class="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-brand">
-                <img src="img/logoar.png" alt="Logo"
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png" alt="Logo"
                     class="navbar-logo">
                 <span class="navbar-title">EEEFM Alzira Ramos</span>
             </a>
@@ -183,82 +183,82 @@
             </div>            
         </section>
 
-        <section class="atividades">
+        <section id="1ipi2" class="turmas" data-section="atividades">
             <h2>Calendário de Atividades - 1ESP</h2>
-            <input type="date" id="dataAtividade" required>
-            <input type="text" id="descricaoAtividade" placeholder="Atividade" required>
-            <input type="text" id="professorAtividade" placeholder="Professor" required>
-            <input type="text" id="disciplinaAtividade" placeholder="Disciplina" required>
-            <button onclick="adicionarAtividade()">Adicionar</button>
-            <div id="listaAtividadesMobile"></div>
-            <div id="calendarioReal"></div>
+            <button onclick="changeMonth(-1)">← Mês Anterior</button>
+            <button onclick="changeMonth(1)">Próximo Mês →</button>
+            <div id="calendar"></div>
+            <script src="calendario.js"></script>
+            <script>
+                renderCalendar(); // Chama o calendário só para esta turma
+            </script>
         </section>
 
         <section id="professores">
             <h2>Professores</h2>
             <div class="lista-professores">
                 <div class="professor">
-                    <img src="img\luiza.jpg" alt="Luiza Alencar" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/luiza.jpg" alt="Luiza Alencar" />
                     <h3>Luiza de Alencar</h3>
                     <p>Disciplina: Algoritmo e Lógica de Programação</p>
                 </div>
                 <div class="professor">
-                    <img src="img\raimunda.jpg" alt="Raimunda" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/raimunda.jpg" alt="Raimunda" />
                     <h3>Raimunda</h3>
                     <p>Disciplina: Sistema Operacionais</p>
                 </div>
                 <div class="professor">
-                    <img src="img\carlos.jpg" alt="Carlos Pereira" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/carlos.jpg" alt="Carlos Pereira" />
                     <h3>Carlos Pereira</h3>
                     <p>Disciplina: Física</p>
                 </div>
                 <div class="professor">
-                    <img src="img\genecy.jpg" alt="Genecy Peges" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/genecy.jpg" alt="Genecy Peges" />
                     <h3>Genecy Peges</h3>
                     <p>Disciplina: Inglês</p>
                 </div>
                 <div class="professor">
-                    <img src="img\Luana.jpeg" alt="Luana" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/Luana.jpeg" alt="Luana" />
                     <h3>Luanna Ferreira Theodoro Teixeira</h3>
-                    <p>Disciplina: Sociologia </p>
+                    <p>Disciplina: Sociologia</p>
                 </div>
                 <div class="professor">
-                    <img src="img\ailton.jpg" alt="José Ailton Vargas da Rosa" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/ailton.jpg" alt="José Ailton Vargas da Rosa" />
                     <h3>José Ailton Vargas da Rosa</h3>
                     <p>Disciplina: Projeto de Vida e Filosofia</p>
                 </div>
                 <div class="professor">
-                    <img src="img\debora.jpg" alt="Debora" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/debora.jpg" alt="Debora" />
                     <h3>Débora Aparecida Rocha Moreira</h3>
-                    <p>Disciplina: Química </p>
+                    <p>Disciplina: Química</p>
                 </div>
                 <div class="professor">
-                    <img src="img\wall.jpeg" alt="Walldimara" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/wall.jpeg" alt="Walldimara" />
                     <h3>Walldimara de Souza</h3>
-                    <p>Disciplina: Artes </p>
+                    <p>Disciplina: Artes</p>
                 </div>
                 <div class="professor">
-                    <img src="img\erika.jpg" alt="Erika" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/erika.jpg" alt="Erika" />
                     <h3>Érica da Silva Ribeiro</h3>
-                    <p>Disciplina: Português </p>
+                    <p>Disciplina: Português</p>
                 </div>
                 <div class="professor">
-                    <img src="img\leonardoh.jpeg" alt="Leonardo Faccini Bringer" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/leonardoh.jpeg" alt="Leonardo Faccini Bringer" />
                     <h3>Leonardo Faccini Bringer</h3>
                     <p>Disciplina: História</p>
                 </div>
                 <div class="professor">
-                    <img src="img\michelly.jpg" alt="Michely de Menezes Garcia Vilet" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/michelly.jpg" alt="Michely de Menezes Garcia Vilet" />
                     <h3>Michely de Menezes Garcia Vilet</h3>
-                    <p>Disciplina: Educação Fisica</p>
+                    <p>Disciplina: Educação Física</p>
                 </div>
                 <div class="professor">
-                    <img src="img\joao.jpg" alt="Foto do ProfessoraCarla João Victor" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/joao.jpg" alt="Foto do ProfessoraCarla João Victor" />
                     <h3>João Victor</h3>
                     <p>Disciplina: Matemática</p>
                 </div>
                 <div class="professor">
-                    <img src="img\neia.jpg" alt="Nea" />
+                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/neia.jpg" alt="Nea" />
                     <h3>Nea</h3>
                     <p>Professora AEE</p>
                 </div>
