@@ -562,7 +562,7 @@ footer {
 }
 
 #equipe,
-#redes {
+#video, #contato {
     background: #ffffff;
 }
 
@@ -820,7 +820,7 @@ td {
     align-items: stretch;
     justify-content: center;
     gap: 1rem;
-    padding: 2rem 1rem;
+    padding: 0.5rem 0.5rem;
     background-color: #fefaf0;
 }
 
@@ -923,7 +923,8 @@ td {
 }
 
 .form-section input,
-.form-section select, #escturmas {
+.form-section select,
+#escturmas {
     padding: 10px;
     font-size: 16px;
     border: 2px solid #b80000;
@@ -940,6 +941,41 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Ocupa a tela toda */
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+    opacity: 1;
+    /* Mantém o vídeo nítido */
+}
+
+.video-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
