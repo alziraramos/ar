@@ -11,14 +11,14 @@
     --success-color: #20AC6B;
     --warning-color: #CC9900;
     --danger-color: #AE1E2C;
-    --background: #FFFAEB;
+    --background: #6b8e23;
     --text-dark: #000000;
     --text-light: #FFFFFF;
     --dominant-color: #FFCA3A;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--background);
@@ -77,7 +77,6 @@ body {
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 2rem;
 }
 
 .nav-link {
@@ -90,6 +89,10 @@ body {
 
 .nav-link:hover {
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+  background-color: transparent !important;
 }
 
 .btn {
@@ -385,7 +388,6 @@ body {
 
 .about-content p {
     margin-bottom: 1rem;
-    color: #333;
     text-align: justify;
 }
 
@@ -475,20 +477,19 @@ body {
     transform: translateY(-3px);
 }
 
-/* Contact Info */
 .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* mínimo 280px */
+  gap: 0.5rem;
 }
 
 .contact-card {
-    background-color: #ffffff;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 
 .contact-card h3 {
     margin-bottom: 1rem;
@@ -497,10 +498,8 @@ body {
 
 /* Footer */
 footer {
-    background-color: #000000;
-    color: var(--text-light);
-    padding: 3rem 0;
     text-align: center;
+    color: white;
 }
 
 .footer-content {
@@ -509,6 +508,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    margin: 2rem;
 }
 
 .footer-links {
@@ -562,7 +562,8 @@ footer {
 }
 
 #equipe,
-#video, #contato {
+#video,
+#contato {
     background: #ffffff;
 }
 
@@ -590,21 +591,12 @@ footer {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 2px solid #ccc;
     transition: transform 0.3s ease;
 }
 
 .membro img:hover,
 .turma-index img:hover {
     transform: scale(1.05);
-}
-
-footer {
-    background: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 12px;
 }
 
 .projetos {
@@ -821,7 +813,6 @@ td {
     justify-content: center;
     gap: 1rem;
     padding: 0.5rem 0.5rem;
-    background-color: #fefaf0;
 }
 
 .carrossel {
@@ -948,10 +939,9 @@ button {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    font-family: 'Roboto Slab', serif;
-  }
-  
-  .bg-video {
+}
+
+.bg-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -960,29 +950,65 @@ button {
     transform: translate(-50%, -50%);
     object-fit: cover;
     z-index: 1;
-  }
-  
-  .video-overlay {
+}
+
+.video-overlay {
     position: relative;
     z-index: 2;
     text-align: center;
     color: white;
     top: 50%;
-    
+    transform: translateY(-50%);
     max-width: 90%;
     margin: 0 auto;
-  }
-  
-  .video-overlay h1 {
-    font-size: 3rem; /* tamanho grande */
+}
+
+.video-overlay h1 {
+    font-size: 3rem;
     margin-bottom: 1rem;
-  }
-  
-  .video-overlay p {
+}
+
+.video-overlay p {
     font-size: 1.5rem;
-  }
+    margin-bottom: 1.5rem;
+}
+
+.btn-see-more {
+    background-color: #a0cac9;
+    color: #0a2342;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn-see-more:hover {
+    background-color: rgb(96, 140, 190);
+    color: var(--text-light)
+}
+
+#noticias h2, #sobre h2, #sobre p, #turmas h2, #redes h2{
+    color: var(--text-light);
+}
 
 @media (max-width: 768px) {
+    .video-overlay {
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .video-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .video-overlay p {
+        font-size: 1rem;
+    }
+
+    .btn-see-more {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+
     .navbar-nav {
         display: none;
         position: fixed;
@@ -1000,6 +1026,7 @@ button {
 
     .navbar-nav.active {
         display: flex;
+        gap: 1rem;
     }
 
     .mobile-menu-toggle {
