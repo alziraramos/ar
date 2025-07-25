@@ -947,11 +947,11 @@ button {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* Ocupa a tela toda */
     overflow: hidden;
-}
-
-.bg-video {
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .bg-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -960,23 +960,27 @@ button {
     transform: translate(-50%, -50%);
     object-fit: cover;
     z-index: 1;
-    opacity: 1;
-    /* Mantém o vídeo nítido */
-}
-
-.video-overlay {
+  }
+  
+  .video-overlay {
     position: relative;
     z-index: 2;
     text-align: center;
     color: white;
     top: 50%;
-    transform: translateY(-50%);
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
-    max-width: 80%;
+    
+    max-width: 90%;
     margin: 0 auto;
-}
+  }
+  
+  .video-overlay h1 {
+    font-size: 3rem; /* tamanho grande */
+    margin-bottom: 1rem;
+  }
+  
+  .video-overlay p {
+    font-size: 1.5rem;
+  }
 
 @media (max-width: 768px) {
     .navbar-nav {
