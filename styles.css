@@ -15,6 +15,7 @@
     --text-dark: #000000;
     --text-light: #FFFFFF;
     --dominant-color: #FFCA3A;
+    --turmas: #0a2342;
 }
 
 body {
@@ -36,7 +37,6 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1rem 0;
     transition: background-color 0.3s ease;
 }
 
@@ -504,7 +504,7 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
@@ -715,8 +715,8 @@ h2 {
 
 
 .turma h2 {
-    color: #b80000;
-    border-bottom: 2px solid #b80000;
+    color: var(--turmas);
+    border-bottom: 2px solid var(--turmas);
 }
 
 table {
@@ -786,7 +786,6 @@ td {
 .professor p {
     margin: 0;
     font-size: 14px;
-    color: #555;
 }
 
 #conteudo,
@@ -875,7 +874,6 @@ td {
 
 #calendar {
     margin-top: 20px;
-    font-family: Arial, sans-serif;
 }
 
 .calendar-grid {
@@ -891,6 +889,11 @@ td {
     min-height: 80px;
     position: relative;
     background: #f9f9f9;
+    color: var(--turmas);
+}
+
+#calendar h3{
+    color: var(--turmas);
 }
 
 .day.active {
@@ -927,7 +930,7 @@ td {
 button {
     padding: 10px 15px;
     font-weight: bold;
-    background: #b80000;
+    background: var(--turmas);
     color: white;
     border: none;
     border-radius: 5px;
