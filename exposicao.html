@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
+    <title>Projeto Vida Marinha</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
+        type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="project">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
+                    alt="Logo" class="navbar-logo">
+                <span class="navbar-title">EEEFM Alzira Ramos</span>
+            </a>
+
+            <ul class="navbar-nav" id="navbarNav">
+                <li><a href="index.html#noticias" class="nav-link">Notícias</a></li>
+                <li><a href="index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="index.html#equipe" class="nav-link">Equipe</a></li>
+                <li><a href="index.html#turmas" class="nav-link">Turmas</a></li>
+                <li><a href="index.html#video" class="nav-link">Vida Marinha</a></li>
+                <li><a href="index.html#redes" class="nav-link">Redes Sociais</a></li>
+                <li><a href="index.html#contato" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <img id="imagem-exposicao" src="" alt="Imagem da Exposição">
+        <h1 id="titulo-exposicao"></h1>
+        <p id="descricao-exposicao"></p>
+        <div class="pergunta" id="pergunta-exposicao"></div>
+    </main>
+
+    <div class="project-button">
+        <button class="btn-back"><a href="marinho.html">Voltar</a></button>
+    </div>
+
+    <script>
+        // DADOS DE TODAS AS EXPOSIÇÕES
+        const exposicoes = {
+            baleias: {
+                imagem: "img/baleias.jpg",
+                titulo: "Baleias Jubarte: Recuperação Populacional",
+                descricao: "A exposição mostra como as populações de baleias jubarte estão se recuperando graças a esforços internacionais de proteção.",
+                pergunta: "Se uma baleia consome 1.200 kg de krill por dia, quanto consome em 30 dias?"
+            },
+            charges: {
+                imagem: "img/charges.jpg",
+                titulo: "Charges em HQ",
+                descricao: "Uma análise crítica e humorada sobre os desafios enfrentados pelos oceanos, representados em quadrinhos.",
+                pergunta: "Se um artista desenha 3 charges por dia, quantas ele desenhará em 2 semanas?"
+            },
+            correntes: {
+                imagem: "img/correntes.jpg",
+                titulo: "Tipos de Correntes Marítimas e sua Importância",
+                descricao: "A exposição aborda como as correntes influenciam o clima, a navegação e a vida marinha em geral.",
+                pergunta: "Se uma corrente transporta 5 milhões de litros de água por minuto, quantos litros são transportados em 1 hora?"
+            },
+            gps: {
+                imagem: "img/gps.jpg",
+                titulo: "GPS Natural das Tartarugas e Tecnologias Humanas",
+                descricao: "Você vai descobrir como as tartarugas marinhas navegam longas distâncias e como isso se relaciona com os sistemas de GPS criados pelo ser humano.",
+                pergunta: "Se uma tartaruga percorre 80 km por dia, quanto ela percorre em 15 dias?"
+            },
+            impacto: {
+                imagem: "img/impacto.jpg",
+                titulo: "Impactos das Tecnologias Náuticas",
+                descricao: "Esta exposição discute como embarcações e tecnologias afetam diretamente os ecossistemas marinhos.",
+                pergunta: "Se um navio emite 200 kg de CO₂ por hora, quanto emite em uma viagem de 36 horas?"
+            },
+            influencia: {
+                imagem: "img/influencia.jpg",
+                titulo: "Influência do Mar no Tempo",
+                descricao: "Explore como os oceanos afetam diretamente o clima e a previsão do tempo em diversas regiões.",
+                pergunta: "Se a temperatura do mar sobe 0,2°C a cada década, quanto aumentará em 50 anos?"
+            },
+            conhecer: {
+                imagem: "img/conhecer.jpg",
+                titulo: "Conhecer para Aprender",
+                descricao: "Uma proposta interativa que estimula o público a explorar e aprender sobre a biodiversidade marinha.",
+                pergunta: "Se um visitante leva 10 minutos por estação e há 12 estações, quanto tempo ele gastará no total?"
+            },
+            vr: {
+                imagem: "img/vr.jpg",
+                titulo: "Voices of the Oceans - Mergulho Imersivo com Óculos VR",
+                descricao: "Vivencie um mergulho virtual nas profundezas do oceano com realidade aumentada e ouça as 'vozes' do fundo do mar.",
+                pergunta: "Se o óculos VR funciona por 2 horas com uma carga, quantas cargas são necessárias para 10 apresentações de 1h?"
+            },
+            awareness: {
+                imagem: "img/awareness.jpg",
+                titulo: "Awareness the Seas",
+                descricao: "Sensibilização para a preservação dos mares, com dados, imagens e depoimentos impactantes.",
+                pergunta: "Se 12 milhões de toneladas de plástico entram nos oceanos por ano, quantas entram em 8 anos?"
+            }
+        };
+
+        // PEGA O ID DA URL
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+
+        // PEGA A EXPOSIÇÃO CORRESPONDENTE
+        const exposicao = exposicoes[id];
+
+        // MOSTRA NA TELA
+        if (exposicao) {
+            document.getElementById("imagem-exposicao").src = exposicao.imagem;
+            document.getElementById("titulo-exposicao").textContent = exposicao.titulo;
+            document.getElementById("descricao-exposicao").textContent = exposicao.descricao;
+            document.getElementById("pergunta-exposicao").textContent = exposicao.pergunta;
+        } else {
+            document.querySelector("main").innerHTML = "<h1>Exposição não encontrada.</h1>";
+        }
+    </script>
+
+    <footer>
+        <div>
+            <div class="footer-content">
+                <p>© 2025 EEEFM Alzira Ramos. Todos os direitos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#turmas">Turmas</a></li>
+                    <li><a href="#video">Vida Marinha</a></li>
+                    <li><a href="#redes">Redes Sociais</a></li>
+                    <li><a href="#contato">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

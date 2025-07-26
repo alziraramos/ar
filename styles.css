@@ -679,12 +679,9 @@ footer {
 }
 
 #main {
-    margin-top: 150px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
     background: #fff;
     padding: 2rem;
+    margin: 6rem 6rem 1rem 6rem;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -964,19 +961,24 @@ button {
     margin-bottom: 1.5rem;
 }
 
-.btn-see-more {
+.btn-see-more, .btn-back {
     background-color: #a0cac9;
 }
 
-.btn-see-more a {
+.btn-see-more a, .btn-back a{
     text-decoration: none;
     color: #0a2342;
     font-family: 'Roboto Slab', serif;
 }
 
-.btn-see-more:hover {
+.btn-see-more:hover, .btn-back:hover {
     background-color: rgb(96, 140, 190);
     color: var(--text-light)
+}
+
+.project-button{
+    display: flex;
+    justify-content: center;
 }
 
 #project {
@@ -1023,7 +1025,6 @@ button {
     color: white;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.4);
-    /* escurece imagem para melhor leitura */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1033,8 +1034,21 @@ button {
     padding: 20px;
 }
 
+#titulo-exposicao {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.pergunta {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
 @media (max-width: 768px) {
-    #main, #project {
+
+    #main,
+    #project {
         margin: 8rem 1rem 1rem 1rem;
     }
 
