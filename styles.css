@@ -889,11 +889,6 @@ td {
     color: var(--turmas);
 }
 
-.day.active {
-    background-color: #ffe6e6;
-    border: 2px solid #b80000;
-}
-
 .atividade {
     background: white;
     border-left: 4px solid #b80000;
@@ -973,7 +968,7 @@ button {
     background-color: #a0cac9;
 }
 
-.btn-see-more a{
+.btn-see-more a {
     text-decoration: none;
     color: #0a2342;
     font-family: 'Roboto Slab', serif;
@@ -984,7 +979,10 @@ button {
     color: var(--text-light)
 }
 
-
+#project {
+    background-color: #0e5a8a;
+    margin: 5rem 0;
+}
 
 #noticias h2,
 #sobre h2,
@@ -992,6 +990,7 @@ button {
 #turmas h2,
 #redes h2,
 .turmas h2,
+#stands h2,
 #calendar h3 {
     color: var(--text-light);
 }
@@ -1001,8 +1000,41 @@ button {
     padding: 5rem 3rem;
 }
 
+.exposicao {
+    position: relative;
+    height: 250px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.exposicao:hover {
+    transform: scale(1.02);
+}
+
+.exposicao a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.4);
+    /* escurece imagem para melhor leitura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
 @media (max-width: 768px) {
-    #main {
+    #main, #project {
         margin: 8rem 1rem 1rem 1rem;
     }
 
