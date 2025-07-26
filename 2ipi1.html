@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
     <title>2ª Série do EM IPI1</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png" type="image/png">
+    <link rel="icon" href="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
+        type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-brand">
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png" alt="Logo"
-                    class="navbar-logo">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
+                    alt="Logo" class="navbar-logo">
                 <span class="navbar-title">EEEFM Alzira Ramos</span>
             </a>
 
@@ -42,231 +43,255 @@
         </div>
     </nav>
 
-    <main id="turma" class="turma">
-        <section class="horario">
-            <h2>Horário - 2IPI1</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Horário</th>
-                        <th>Segunda</th>
-                        <th>Terça</th>
-                        <th>Quarta</th>
-                        <th>Quinta</th>
-                        <th>Sexta</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>13:00 - 13:50</td>
-                        <td>Matemática</td>
-                        <td>Biologia</td>
-                        <td>Português</td>
-                        <td>Introdução à Rede de Computadores</td>
-                        <td>Introdução à Rede de Computadores</td>
-                    </tr>
-                    <tr>
-                        <td>13:50 - 14:40</td>
-                        <td>Eletiva</td>
-                        <td>Cultura Digital</td>
-                        <td>Português</td>
-                        <td>Linguagem de Programação Aplicada a WEB</td>
-                        <td>Internet das Coisas</td>
-                    </tr>
-                    <tr>
-                        <td>14:40 - 15:30</td>
-                        <td>Eletiva</td>
-                        <td>Português</td>
-                        <td>História</td>
-                        <td>Geografia</td>
-                        <td>História</td>
-                    </tr>
-                    <tr>
-                        <td>15:30 - 16:20</td>
-                        <td>Estudo Orientado</td>
-                        <td>Banco de Dados</td>
-                        <td>Matemática</td>
-                        <td>Aplicativos Web</td>
-                        <td>Matemática</td>
-                    </tr>
-                    <tr>
-                        <td>16:20 - 16:40</td>
-                        <td colspan="5" style="text-align:center">Recreio</td>
-                    </tr>
-                    <tr>
-                        <td>16:40 - 17:30</td>
-                        <td>Aplicativos Web</td>
-                        <td>Práticas Experimentais</td>
-                        <td>Linguagem de Programação Aplicada a WEB</td>
-                        <td>Química</td>
-                        <td>Matemática</td>
-                    </tr>
-                    <tr>
-                        <td>17:30 - 18:20</td>
-                        <td>Física</td>
-                        <td>Química</td>
-                        <td>Banco de Dados</td>
-                        <td>Cultura Digital</td>
-                        <td>Português</td>
-                    </tr>
-                    <tr>
-                        <td>18:20 - 19:10</td>
-                        <td>Biologia</td>
-                        <td>Internet das Coisas</td>
-                        <td>Projeto de Vida</td>
-                        <td>Física</td>
-                        <td>Geografia</td>
-                    </tr>
-                </tbody>
-            </table>
+    <section class="horario section" id="horario">
+        <h2 class="section-title">Horário - 2IPI1</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>13:00 - 13:50</td>
+                    <td>Matemática</td>
+                    <td>Biologia</td>
+                    <td>Português</td>
+                    <td>Introdução à Rede de Computadores</td>
+                    <td>Introdução à Rede de Computadores</td>
+                </tr>
+                <tr>
+                    <td>13:50 - 14:40</td>
+                    <td>Eletiva</td>
+                    <td>Cultura Digital</td>
+                    <td>Português</td>
+                    <td>Linguagem de Programação Aplicada a WEB</td>
+                    <td>Internet das Coisas</td>
+                </tr>
+                <tr>
+                    <td>14:40 - 15:30</td>
+                    <td>Eletiva</td>
+                    <td>Português</td>
+                    <td>História</td>
+                    <td>Geografia</td>
+                    <td>História</td>
+                </tr>
+                <tr>
+                    <td>15:30 - 16:20</td>
+                    <td>Estudo Orientado</td>
+                    <td>Banco de Dados</td>
+                    <td>Matemática</td>
+                    <td>Aplicativos Web</td>
+                    <td>Matemática</td>
+                </tr>
+                <tr>
+                    <td>16:20 - 16:40</td>
+                    <td colspan="5" style="text-align:center">Recreio</td>
+                </tr>
+                <tr>
+                    <td>16:40 - 17:30</td>
+                    <td>Aplicativos Web</td>
+                    <td>Práticas Experimentais</td>
+                    <td>Linguagem de Programação Aplicada a WEB</td>
+                    <td>Química</td>
+                    <td>Matemática</td>
+                </tr>
+                <tr>
+                    <td>17:30 - 18:20</td>
+                    <td>Física</td>
+                    <td>Química</td>
+                    <td>Banco de Dados</td>
+                    <td>Cultura Digital</td>
+                    <td>Português</td>
+                </tr>
+                <tr>
+                    <td>18:20 - 19:10</td>
+                    <td>Biologia</td>
+                    <td>Internet das Coisas</td>
+                    <td>Projeto de Vida</td>
+                    <td>Física</td>
+                    <td>Geografia</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <div class="horario-mobile">
-                <div class="horario-mobile-day">
-                    <h4>Segunda</h4>
-                    <ul>
-                        <li>13:00 - 13:50 — Matemática</li>
-                        <li>13:50 - 14:40 — Eletiva</li>
-                        <li>14:40 - 15:30 — Eletiva</li>
-                        <li>15:30 - 16:20 — Estudo Orientado</li>
-                        <li>16:40 - 17:30 — Aplicativos Web</li>
-                        <li>17:30 - 18:20 — Física</li>
-                        <li>18:20 - 19:10 — Biologia</li>
-                    </ul>
-                </div>
-                <div class="horario-mobile-day">
-                    <h4>Terça</h4>
-                    <ul>
-                        <li>13:00 - 13:50 — Biologia</li>
-                        <li>13:50 - 14:40 — Cultura Digital</li>
-                        <li>14:40 - 15:30 — Português</li>
-                        <li>15:30 - 16:20 — Banco de Dados</li>
-                        <li>16:40 - 17:30 — Práticas Experimentais</li>
-                        <li>17:30 - 18:20 — Química</li>
-                        <li>18:20 - 19:10 — Internet das Coisas</li>
-                    </ul>
-                </div>
-                <div class="horario-mobile-day">
-                    <h4>Quarta</h4>
-                    <ul>
-                        <li>13:00 - 13:50 — Português</li>
-                        <li>13:50 - 14:40 — Português</li>
-                        <li>14:40 - 15:30 — História</li>
-                        <li>15:30 - 16:20 — Matemática</li>
-                        <li>16:40 - 17:30 — Linguagem de Programação Aplicada a WEB</li>
-                        <li>17:30 - 18:20 — Banco de Dados</li>
-                        <li>18:20 - 19:10 — Projeto de Vida</li>
-                    </ul>
-                </div>
-                <div class="horario-mobile-day">
-                    <h4>Quinta</h4>
-                    <ul>
-                        <li>13:00 - 13:50 — Introdução à Rede de Computadores</li>
-                        <li>13:50 - 14:40 — Linguagem de Programação Aplicada a WEB</li>
-                        <li>14:40 - 15:30 — Geografia</li>
-                        <li>15:30 - 16:20 — Aplicativos Web</li>
-                        <li>16:40 - 17:30 — Química</li>
-                        <li>17:30 - 18:20 — Cultura Digital</li>
-                        <li>18:20 - 19:10 — Física</li>
-                    </ul>
-                </div>
-                <div class="horario-mobile-day">
-                    <h4>Sexta</h4>
-                    <ul>
-                        <li>13:00 - 13:50 — Introdução à Rede de Computadores</li>
-                        <li>13:50 - 14:40 — Internet das Coisas</li>
-                        <li>14:40 - 15:30 — História</li>
-                        <li>15:30 - 16:20 — Matemática</li>
-                        <li>16:40 - 17:30 — Matemática</li>
-                        <li>17:30 - 18:20 — Português</li>
-                        <li>18:20 - 19:10 — Geografia</li>
-                    </ul>
-                </div>
-            </div>            
-        </section>
-
-        <section id="2ipi1" class="turmas" data-section="atividades">
-            <h2>Calendário de Atividades - 1ESP</h2>
-            <button onclick="changeMonth(-1)">← Mês Anterior</button>
-            <button onclick="changeMonth(1)">Próximo Mês →</button>
-            <div id="calendar"></div>
-            <script src="calendario.js"></script>
-            <script>
-                renderCalendar(); // Chama o calendário só para esta turma
-            </script>
-        </section>
-
-        <section id="professores">
-            <h2>Professores</h2>
-            <div class="lista-professores">
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/luiza.jpg" alt="Luiza Alencar" /> 
-                    <h3>Luiza de Alencar</h3>
-                    <p>Disciplina: Linguagem de Programação Aplicada a WEB</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/ailton.jpg" alt="Foto da Professora José Ailton Vargas da Rosa" />
-                    <h3>José Ailton Vargas da Rosa</h3>
-                    <p>Disciplina: Projeto de Vida e Estudo Orientado</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/carlos.jpg" alt="Foto do Professor Carlos Pereira" />
-                    <h3>Carlos Pereira</h3>
-                    <p>Disciplina: Física</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/leonardogeo.jpg" alt="Foto do Professor Leonardo Galiano" />
-                    <h3>Leonardo Galiano</h3>
-                    <p>Disciplina: Geografia</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/leonardoh.jpeg" alt="Foto do Professor Leonardo Faccini Bringer" />
-                    <h3>Leonardo Faccini Bringer</h3>
-                    <p>Disciplina: História</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/andreangelo.jpg" alt="Foto do Professor Andreangelo Patuzzo" />
-                    <h3>Andreângelo Patuzzo</h3>
-                    <p>Disciplina: Internet das Coisas e Aplicativos Web</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/joao.jpg" alt="Foto do ProfessoraCarla João Victor" />
-                    <h3>João Victor</h3>
-                    <p>Disciplina: Matemática</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/euvideo.jpg" alt="Foto do Professor Euvideo Ferreira Nascimento Neto" />
-                    <h3>Elvidio Ferreira Nascimento Neto</h3>
-                    <p>Disciplina: Banco de Dados e Introdução à Rede de Computadores</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/dione.jpg" alt="Dione Jenier Soares" />
-                    <h3>Dione Jenier Soares</h3>
-                    <p>Disciplina: Português</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/raimunda.jpg" alt="raimunda" />
-                    <h3>Raimunda Mariano</h3>
-                    <p>Disciplina: Cultura Digital</p>
-                </div>                            
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/denilson.jpg" alt="Denilson" />
-                    <h3>Denilson de Souza Cordeiro</h3>
-                    <p>Disciplina: Biologia</p>
-                </div>
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/debora.jpg" alt="debora" />
-                    <h3>Débora Aparecida Rocha Moreira</h3>
-                    <p>Disciplina: Química e Práticas Experimentais</p>
-                </div>              
-                <div class="professor">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/silvana.jpg" alt="Silvana" />
-                    <h3>Silvana</h3>
-                    <p>Professora AEE</p>
-                </div>               
+        <div class="horario-mobile">
+            <div class="horario-mobile-day">
+                <h4>Segunda</h4>
+                <ul>
+                    <li>13:00 - 13:50 — Matemática</li>
+                    <li>13:50 - 14:40 — Eletiva</li>
+                    <li>14:40 - 15:30 — Eletiva</li>
+                    <li>15:30 - 16:20 — Estudo Orientado</li>
+                    <li>16:40 - 17:30 — Aplicativos Web</li>
+                    <li>17:30 - 18:20 — Física</li>
+                    <li>18:20 - 19:10 — Biologia</li>
+                </ul>
             </div>
-        </section>
+            <div class="horario-mobile-day">
+                <h4>Terça</h4>
+                <ul>
+                    <li>13:00 - 13:50 — Biologia</li>
+                    <li>13:50 - 14:40 — Cultura Digital</li>
+                    <li>14:40 - 15:30 — Português</li>
+                    <li>15:30 - 16:20 — Banco de Dados</li>
+                    <li>16:40 - 17:30 — Práticas Experimentais</li>
+                    <li>17:30 - 18:20 — Química</li>
+                    <li>18:20 - 19:10 — Internet das Coisas</li>
+                </ul>
+            </div>
+            <div class="horario-mobile-day">
+                <h4>Quarta</h4>
+                <ul>
+                    <li>13:00 - 13:50 — Português</li>
+                    <li>13:50 - 14:40 — Português</li>
+                    <li>14:40 - 15:30 — História</li>
+                    <li>15:30 - 16:20 — Matemática</li>
+                    <li>16:40 - 17:30 — Linguagem de Programação Aplicada a WEB</li>
+                    <li>17:30 - 18:20 — Banco de Dados</li>
+                    <li>18:20 - 19:10 — Projeto de Vida</li>
+                </ul>
+            </div>
+            <div class="horario-mobile-day">
+                <h4>Quinta</h4>
+                <ul>
+                    <li>13:00 - 13:50 — Introdução à Rede de Computadores</li>
+                    <li>13:50 - 14:40 — Linguagem de Programação Aplicada a WEB</li>
+                    <li>14:40 - 15:30 — Geografia</li>
+                    <li>15:30 - 16:20 — Aplicativos Web</li>
+                    <li>16:40 - 17:30 — Química</li>
+                    <li>17:30 - 18:20 — Cultura Digital</li>
+                    <li>18:20 - 19:10 — Física</li>
+                </ul>
+            </div>
+            <div class="horario-mobile-day">
+                <h4>Sexta</h4>
+                <ul>
+                    <li>13:00 - 13:50 — Introdução à Rede de Computadores</li>
+                    <li>13:50 - 14:40 — Internet das Coisas</li>
+                    <li>14:40 - 15:30 — História</li>
+                    <li>15:30 - 16:20 — Matemática</li>
+                    <li>16:40 - 17:30 — Matemática</li>
+                    <li>17:30 - 18:20 — Português</li>
+                    <li>18:20 - 19:10 — Geografia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <section id="2ipi1" class="turmas section" data-section="atividades">
+        <h2 class="section-title">Calendário de Atividades - 1ESP</h2>
+        <button onclick="changeMonth(-1)">← Mês Anterior</button>
+        <button onclick="changeMonth(1)">Próximo Mês →</button>
+        <div id="calendar"></div>
+        <script src="calendario.js"></script>
+        <script>
+            renderCalendar(); // Chama o calendário só para esta turma
+        </script>
+    </section>
+
+    <section id="professores" class="section">
+        <h2 class="section-title">Professores</h2>
+        <div class="lista-professores">
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/andreangelo.jpg"
+                    alt="Andreangelo Patuzzo" />
+                <h3>Andreângelo Patuzzo</h3>
+                <p>Disciplinas: Internet das Coisas e Aplicativos Web</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/carlos.jpg"
+                    alt="Carlos Pereira" />
+                <h3>Carlos Pereira</h3>
+                <p>Disciplina: Física</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/debora.jpg"
+                    alt="debora" />
+                <h3>Débora Aparecida Rocha Moreira</h3>
+                <p>Disciplinas: Química e Práticas Experimentais</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/denilson.jpeg"
+                    alt="Denilson" />
+                <h3>Denilson de Souza Cordeiro</h3>
+                <p>Disciplina: Biologia</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/dione.jpg"
+                    alt="Dione Jenier Soares" />
+                <h3>Dione Jenier Soares</h3>
+                <p>Disciplina: Português</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/euvideo.jpg"
+                    alt="Elvideo Ferreira Nascimento Neto" />
+                <h3>Elvidio Ferreira Nascimento Neto</h3>
+                <p>Disciplinas: Banco de Dados e Introdução à Rede de Computadores</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/joao.jpg"
+                    alt="João Victor" />
+                <h3>João Victor</h3>
+                <p>Disciplina: Matemática</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/ailton.jpg"
+                    alt="José Ailton Vargas da Rosa" />
+                <h3>José Ailton Vargas da Rosa</h3>
+                <p>Disciplinas: Projeto de Vida e Estudo Orientado</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/leonardoh.jpeg"
+                    alt="Leonardo Faccini Bringer" />
+                <h3>Leonardo Faccini Bringer</h3>
+                <p>Disciplina: História</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/leonardogeo.jpg"
+                    alt="Leonardo Galiano" />
+                <h3>Leonardo Galiano</h3>
+                <p>Disciplina: Geografia</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/luiza.jpg"
+                    alt="Luiza Alencar" />
+                <h3>Luiza de Alencar</h3>
+                <p>Disciplina: Linguagem de Programação Aplicada a WEB</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/raimunda.jpg"
+                    alt="raimunda" />
+                <h3>Raimunda Mariano</h3>
+                <p>Disciplina: Cultura Digital</p>
+            </div>
+
+            <div class="professor">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/silvana.jpg"
+                    alt="Silvana" />
+                <h3>Silvana</h3>
+                <p>Professora AEE</p>
+            </div>
+
+        </div>
+    </section>
 
     <footer>
         <div>
@@ -285,6 +310,8 @@
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
