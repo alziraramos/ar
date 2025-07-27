@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
-    <title>Projeto Vida Marinha</title>
+    <title>Calendário Geral</title>
     <link rel="icon" href="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
         type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="project">
+
+<body data-page="professor">
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="index.html#" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
                     alt="Logo" class="navbar-logo">
                 <span class="navbar-title">EEEFM Alzira Ramos</span>
@@ -42,45 +43,34 @@
         </div>
     </nav>
 
-    <section id="stands">
-        <h2 class="section-title">Exposições</h2>
+    <main id="turma" class="turma">
+        <section id="atividades">
+            <h2>Calendário Geral</h2>
 
-        <section class="exposicao" style="background-image: url('img/gps-tartarugas.jpg')">
-            <a href="exposicao.html?id=gps">GPS Natural das Tartarugas Comparado com Tecnologias Humanas</a>
+            <div class="form-section">
+                <input type="date" id="data" placeholder="Data">
+                <input type="text" id="turma-calender" placeholder="Turma">
+                <input type="text" id="professores-calender" placeholder="Professor(es)">
+                <input type="text" id="descricao" placeholder="Descrição">
+                <button onclick="addAtividadeGeral()">Adicionar</button>
+            </div>
+            <br>
+            <button onclick="changeMonth(-1)">← Mês Anterior</button>
+            <button onclick="changeMonth(1)">Próximo Mês →</button>
+            <br>
+
+            <div id="calendar-content"></div>
         </section>
 
-        <section class="exposicao" style="background-image: url('img/correntes.jpg')">
-            <a href="exposicao.html?id=correntes">Tipos de Correntes Marítimas e sua Importância para a Humanidade</a>
-        </section>
+        <script>
+            const isProfessorPage = true;
+        </script>
+        <script src="calendario-geral.js"></script>
+        <script>
+            renderCalendarGeral(true);
+        </script>
 
-        <section class="exposicao" style="background-image: url('img/awareness.jpg')">
-            <a href="exposicao.html?id=awareness">Awareness the Seas</a>
-        </section>
-
-        <section class="exposicao" style="background-image: url('img/impactos-nauticos.jpg')">
-            <a href="exposicao.html?id=impacto">Impactos das Tecnologias Náuticas</a>
-        </section>
-
-        <section class="exposicao" style="background-image: url('img/conhecer-aprender.jpg')">
-            <a href="exposicao.html?id=conhecer">Conhecer para Aprender</a>
-        </section>
-
-        <section class="exposicao" style="background-image: url('img/vr.jpg')">
-            <a href="exposicao.html?id=vr">Voices of the Oceans - Mergulho Imersivo através dos Óculos VR</a>
-        </section>
-
-        <section class="exposicao" style="background-image: url('img/charges.jpg')">
-            <a href="exposicao.html?id=charges">Charges em HQ</a>
-        </section>
-
-        <section class="exposicao" style="background-image: url('img/tempo.jpg')">
-            <a href="exposicao.html?id=influencia">Influência do Mar no Tempo</a>
-        </section>
-
-        <section class="exposicao" style="background-image: url('img/baleias.jpg')">
-            <a href="exposicao.html?id=baleias">Baleias Jubarte: Recuperação Populacional</a>
-        </section>
-    </section>
+    </main>
 
     <footer>
         <div>

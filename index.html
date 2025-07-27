@@ -10,6 +10,7 @@
     <link rel="icon" href="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
         type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -27,8 +28,8 @@
                 <li><a href="#projetos" class="nav-link">Projetos</a></li>
                 <li><a href="#equipe" class="nav-link">Equipe</a></li>
                 <li><a href="#turmas" class="nav-link">Turmas</a></li>
+                <li><a href="#calendario" class="nav-link">Calendário</a></li>
                 <li><a href="#video" class="nav-link">Vida Marinha</a></li>
-                <li><a href="#redes" class="nav-link">Redes Sociais</a></li>
                 <li><a href="#contato" class="nav-link">Contatos</a></li>
             </ul>
 
@@ -299,9 +300,29 @@
         </div>
     </section>
 
+    <section class="escola section" id="calendario" data-section="school">
+        <h2 class="section-title">Calendário</h2>
+
+        <div style="margin-bottom: 10px;">
+            <button onclick="changeMonth(-1)">← Mês Anterior</button>
+            <button onclick="changeMonth(1)">Próximo Mês →</button>
+        </div>
+
+        <div id="calendar-content"></div>
+
+        <script>
+            const isProfessorPage = false;
+        </script>
+        <script src="calendario-geral.js"></script>
+        <script>
+            renderCalendarGeral(false);
+        </script>
+
+    </section>
+
     <section class="video-section section" id="video">
         <video autoplay loop muted playsinline class="bg-video">
-            <source src="img\Vídeo_Marinho_Realismo_e_Esperança.mp4" type="video/mp4">
+            <source src="img\marinha.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
         <div class="video-overlay">
@@ -311,23 +332,9 @@
         </div>
     </section>
 
-    <!-- Social -->
-    <section class="section" id="redes">
-        <div class="container">
-            <h2 class="section-title">Siga Nossas Redes</h2>
-            <div class="social-links">
-                <a href="https://www.instagram.com/eeefmalziraramos/" class="social-link">
-                    <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/insta.png"
-                        alt="Instagram">
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Info -->
     <section class="section" id="contato">
         <div class="container">
-            <h2 class="section-title">Contatos Úteis</h2>
+            <h2 class="section-title">Contatos</h2>
             <div class="contact-grid">
                 <div class="contact-card">
                     <h3>Telefone</h3>
@@ -347,11 +354,14 @@
                     <h3>Horários</h3>
                     <p>Seg-Sex: 7h-19h</p>
                 </div>
+                <div class="contact-card">
+                    <h3>Instagram</h3>
+                    <i class="fa fa-instagram" style="font-size:48px;color:red"></i>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div>
             <div class="footer-content">
@@ -362,8 +372,8 @@
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#equipe">Equipe</a></li>
                     <li><a href="#turmas">Turmas</a></li>
+                    <li><a href="#calendario">Calendário</a></li>
                     <li><a href="#video">Vida Marinha</a></li>
-                    <li><a href="#redes">Redes Sociais</a></li>
                     <li><a href="#contato">Contatos</a></li>
                 </ul>
             </div>

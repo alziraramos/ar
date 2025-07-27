@@ -479,8 +479,6 @@ body {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    /* mínimo 280px */
     gap: 0.5rem;
 }
 
@@ -566,7 +564,7 @@ footer {
 #video,
 #contato,
 #professores,
-#horario {
+#horario, #calendario {
     background: var(--text-light);
 }
 
@@ -903,13 +901,20 @@ td {
 
 .form-section input,
 .form-section select,
-#escturmas {
+#escturmas, .calendario-form input, .calendario-form textarea{
     padding: 10px;
     font-size: 16px;
     border: 2px solid #b80000;
     border-radius: 4px;
     height: 45px;
     min-width: 160px;
+}
+
+.calendario-form{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 button {
@@ -992,13 +997,17 @@ button {
 #turmas h2,
 #redes h2,
 .turmas h2,
-#stands h2,
-#calendar h3 {
+#stands h2, #calendar h3{
     color: var(--text-light);
 }
 
+#calendario h3, #atividades h3{
+    margin: 6px;
+    color: var(--text-dark);
+}
+
 #horario,
-.turmas {
+.turmas, .escola {
     padding: 5rem 3rem;
 }
 
@@ -1042,6 +1051,35 @@ button {
 .pergunta {
     margin-top: 30px;
     font-weight: bold;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.calendar-day {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #f4f4f4;
+  min-height: 100px;
+  font-size: 0.9rem;
+}
+
+.atividade {
+  background-color: #e0f7fa;
+  padding: 4px;
+  margin-top: 4px;
+  border-radius: 4px;
 }
 
 
