@@ -18,6 +18,8 @@
     --turmas: #0a2342;
 }
 
+
+
 body {
     font-family: 'Roboto Slab', serif;
     line-height: 1.6;
@@ -25,13 +27,13 @@ body {
     background-color: var(--background);
 }
 
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -495,29 +497,39 @@ body {
     color: var(--primary-color);
 }
 
-/* Footer */
-footer {
-    text-align: center;
+
+footer.footer-content {
     color: white;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer-content {
+.footer-text {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer-links-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 4rem;
     flex-wrap: wrap;
-    gap: 2rem;
-    margin: 2rem;
+    justify-content: center;
 }
 
 .footer-links {
-    display: flex;
-    gap: 2rem;
     list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .footer-links a {
-    color: var(--text-light);
+    color: #ffffff;
     text-decoration: none;
     transition: opacity 0.3s;
 }
@@ -526,7 +538,6 @@ footer {
     opacity: 0.7;
 }
 
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -564,7 +575,8 @@ footer {
 #video,
 #contato,
 #professores,
-#horario, #calendario {
+#horario,
+#calendario {
     background: var(--text-light);
 }
 
@@ -901,7 +913,9 @@ td {
 
 .form-section input,
 .form-section select,
-#escturmas, .calendario-form input, .calendario-form textarea{
+#escturmas,
+.calendario-form input,
+.calendario-form textarea {
     padding: 10px;
     font-size: 16px;
     border: 2px solid #b80000;
@@ -910,7 +924,7 @@ td {
     min-width: 160px;
 }
 
-.calendario-form{
+.calendario-form {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -966,29 +980,36 @@ button {
     margin-bottom: 1.5rem;
 }
 
-.btn-see-more, .btn-back {
+.btn-see-more,
+.btn-back {
     background-color: #a0cac9;
 }
 
-.btn-see-more a, .btn-back a{
+.btn-see-more a,
+.btn-back a {
     text-decoration: none;
     color: #0a2342;
     font-family: 'Roboto Slab', serif;
 }
 
-.btn-see-more:hover, .btn-back:hover {
+.btn-see-more:hover,
+.btn-back:hover {
     background-color: rgb(96, 140, 190);
     color: var(--text-light)
 }
 
-.project-button{
+.project-button {
     display: flex;
     justify-content: center;
 }
 
 #project {
     background-color: #0e5a8a;
-    margin: 5rem 0;
+    margin: 6rem 2rem 0 2rem;
+}
+
+#exposicao{
+    background-color: #0e5a8a;
 }
 
 #noticias h2,
@@ -997,17 +1018,20 @@ button {
 #turmas h2,
 #redes h2,
 .turmas h2,
-#stands h2, #calendar h3{
+#stands h2,
+#calendar h3 {
     color: var(--text-light);
 }
 
-#calendario h3, #atividades h3{
+#calendario h3,
+#atividades h3 {
     margin: 6px;
     color: var(--text-dark);
 }
 
 #horario,
-.turmas, .escola {
+.turmas,
+.escola {
     padding: 5rem 3rem;
 }
 
@@ -1054,41 +1078,41 @@ button {
 }
 
 .calendar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
 }
 
 .calendar-weekdays {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .calendar-day {
-  border: 1px solid #ddd;
-  padding: 8px;
-  background-color: #f4f4f4;
-  min-height: 100px;
-  font-size: 0.9rem;
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #f4f4f4;
+    min-height: 100px;
+    font-size: 0.9rem;
 }
 
 .atividade {
-  background-color: #e0f7fa;
-  padding: 4px;
-  margin-top: 4px;
-  border-radius: 4px;
+    background-color: #e0f7fa;
+    padding: 4px;
+    margin-top: 4px;
+    border-radius: 4px;
 }
 
 #imagem-exposicao {
-  width: 100%;        
-  max-width: 100%;    
-  height: auto;       
-  display: block;     
-  object-fit: cover;  
-  border-radius: 8px; 
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
