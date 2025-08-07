@@ -1114,6 +1114,10 @@ button {
     border-radius: 8px;
 }
 
+#descricao-exposicao, #pergunta-exposicao{
+    text-align: justify;
+}
+
 @media (max-width: 768px) {
 
     #main,
