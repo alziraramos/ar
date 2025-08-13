@@ -64,8 +64,7 @@
             charges: {
                 imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/13.png",
                 titulo: "Charges em HQ",
-                descricao: "Uma análise crítica e humorada sobre os desafios enfrentados pelos oceanos, representados em quadrinhos.",
-                pergunta: "Se um artista desenha 3 charges por dia, quantas ele desenhará em 2 semanas?"
+                descricao: "Uma análise crítica e humorada sobre os desafios enfrentados pelos oceanos, representados em quadrinhos. <a href='charges.html' target='_blank' class='link-destaque'>Clique aqui para ver as Charges.</a>",
             },
             correntes: {
                 imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/GPS Natural.png",
@@ -96,6 +95,7 @@
                 titulo: "Conhecer para Preservar",
                 descricao: "O primeiro passo para proteger nossos oceanos é conhecê-los. Esta exposição foi criada com esse lema em mente, oferecendo uma jornada interativa que busca despertar a curiosidade e o respeito pela vida marinha. Acreditamos que, ao entender a complexidade dos ecossistemas e a beleza das espécies, cada visitante se torna um agente da conservação.\n\nNossa proposta é um circuito de aprendizado dinâmico, onde cada parada revela um novo segredo dos mares, desde os recifes de corais coloridos até a escuridão misteriosa das fossas abissais. A experiência completa foi planejada para fluir através de 12 estações temáticas.\n\nEm cada uma dessas estações, com painéis, vídeos e atividades interativas, um visitante normalmente leva cerca de 10 minutos para absorver o conteúdo e participar das atividades propostas.",
                 pergunta: "Se um visitante leva, em média, 10 minutos para explorar cada estação e a exposição completa possui 12 estações, quanto tempo em minutos ele gastará para ver tudo?\n\nFórmula a ser usada: Para descobrir o tempo total, multiplique o tempo gasto em cada estação pelo número total de estações.\n\nTempo Total = Tempo por Estação × Número de Estações"
+
             },
             vr: {
                 imagem: "https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/6.png",
@@ -111,6 +111,7 @@
             }
         };
 
+        
         // PEGA O ID DA URL
         const params = new URLSearchParams(window.location.search);
         const id = params.get("id");
@@ -122,8 +123,19 @@
         if (exposicao) {
             document.getElementById("imagem-exposicao").src = exposicao.imagem;
             document.getElementById("titulo-exposicao").textContent = exposicao.titulo;
-            document.getElementById("descricao-exposicao").textContent = exposicao.descricao;
-            document.getElementById("pergunta-exposicao").textContent = exposicao.pergunta;
+            
+            // --- LINHA CORRIGIDA ---
+            // Usamos .innerHTML para que o navegador entenda as tags <a>
+            document.getElementById("descricao-exposicao").innerHTML = exposicao.descricao;
+
+            const perguntaDiv = document.getElementById("pergunta-exposicao");
+            if (exposicao.pergunta) {
+                perguntaDiv.style.display = "block"; // Garante que o campo apareça
+                perguntaDiv.innerHTML = exposicao.pergunta.replace(/\n/g, '<br>');
+            } else {
+                 perguntaDiv.style.display = "none"; // Esconde o campo da pergunta se não existir
+            }
+
         } else {
             document.querySelector("main").innerHTML = "<h1>Exposição não encontrada.</h1>";
         }
@@ -154,7 +166,6 @@
 
 
 </html>
-
 
 
 

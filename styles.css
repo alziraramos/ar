@@ -827,6 +827,19 @@ td {
     max-width: 90%;
 }
 
+/* Adicione este estilo junto com os outros */
+
+.link-destaque {
+    color: #0056b3; /* Cor azul escura para o texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-decoration: underline; /* Adiciona um sublinhado */
+    cursor: pointer; /* Mostra a "mãozinha" ao passar o mouse */
+}
+
+.link-destaque:hover {
+    color: #003d82; /* Opcional: escurece um pouco ao passar o mouse */
+}
+
 .card {
     flex: 0 0 300px;
     background: white;

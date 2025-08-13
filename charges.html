@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
+    <title>Charges</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
+        type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .page-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .carousel-container {
+            max-width: 900px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            background-color: #f0f2f5;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            flex-shrink: 0;
+            object-fit: contain;
+            height: 70vh;
+            display: block;
+            cursor: zoom-in;
+            /* NOVO: Indica que a imagem pode ser ampliada */
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            z-index: 100;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .carousel-control:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 15px;
+        }
+
+        .next {
+            right: 15px;
+        }
+
+        /* NOVO: Estilos para o Modal de Zoom */
+        .modal-zoom {
+            display: none;
+            /* Escondido por padrão */
+            position: fixed;
+            z-index: 1000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content-zoom {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 85vh;
+        }
+
+        .close-zoom {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close-zoom:hover,
+        .close-zoom:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body id="exposicao">
+    <nav class="navbar">
+    </nav>
+
+    <div class="page-content">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge1.jpeg"
+                    alt="Charge 1">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge2.jpeg"
+                    alt="Charge 2">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge3.jpeg"
+                    alt="Charge 3">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge4.jpeg"
+                    alt="Charge 4">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge5.jpeg"
+                    alt="Charge 5">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge6.jpeg"
+                    alt="Charge 6">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge7.jpeg"
+                    alt="Charge 7">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge8.jpeg"
+                    alt="Charge 8">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge9.jpeg"
+                    alt="Charge 9">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge10.jpeg"
+                    alt="Charge 10">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge11.jpeg"
+                    alt="Charge 11">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge12.jpeg"
+                    alt="Charge 12">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge13.jpeg"
+                    alt="Charge 13">
+                <img src="https://raw.githubusercontent.com/alziraramos/ar/refs/heads/main/img/charge14.jpeg"
+                    alt="Charge 14">
+            </div>
+            <button class="carousel-control prev">&#10094;</button>
+            <button class="carousel-control next">&#10095;</button>
+        </div>
+
+        <div class="project-button">
+            <button class="btn-back"><a href="https://alziraramos.github.io/ar/exposicao.html?id=charges">Voltar</a></button>
+        </div>
+    </div>
+
+    <div id="modal-zoom" class="modal-zoom">
+        <span class="close-zoom">&times;</span>
+        <img class="modal-content-zoom" id="img-zoom">
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        // --- LÓGICA DO CARROSSEL ---
+        const slide = document.querySelector('.carousel-slide');
+        const images = document.querySelectorAll('.carousel-slide img');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let currentIndex = 0;
+        const totalImages = images.length;
+
+        function updateSlidePosition() {
+            slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalImages;
+            updateSlidePosition();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            updateSlidePosition();
+        });
+
+        // O Bloco de 'setInterval' foi REMOVIDO para parar o slide automático.
+
+        // --- NOVO: LÓGICA PARA AMPLIAR IMAGEM ---
+        const modal = document.getElementById('modal-zoom');
+        const modalImg = document.getElementById('img-zoom');
+
+        // Adiciona um evento de clique para cada imagem no carrossel
+        images.forEach(img => {
+            img.addEventListener('click', function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            });
+        });
+
+        // Pega o elemento <span> que fecha o modal
+        const span = document.getElementsByClassName("close-zoom")[0];
+
+        // Quando o usuário clica no (x), fecha o modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Também fecha o modal se o usuário clicar fora da imagem (no fundo preto)
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+<footer class="footer-content">
+</footer>
+
+</html>
