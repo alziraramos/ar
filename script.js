@@ -525,6 +525,312 @@ const projetos = {
         <li><strong>Planejamento do Projeto e Execução:</strong> Cada grupo define um projeto prático envolvendo iluminação e sinalização. Aplicação dos conhecimentos adquiridos durante a prática com Arduino e componentes eletrônicos.</li>
     </ol>
     `
+    },
+    "professorAtila": {
+        "nome": "Átila Rodrigues",
+        "titulo": "Projeto Infográfico: Celebrando o Meio Ambiente com Criatividade",
+        "conteudo": `
+    <h3>Turma e Modalidade de Ensino</h3>
+    <p><strong>Língua Portuguesa – 8º anos do Ensino Fundamental</strong></p>
+
+    <h3>Objetos de Conhecimento Abordados</h3>
+    <p>Sustentabilidade, preservação e consciência ecológica.</p>
+
+    <h3>Objetivo da Prática</h3>
+    <p>Criar infográficos que representem informações sobre meio ambiente. Compreender o conceito e a estrutura de infográficos. Discutir e interpretar dados relacionados ao Dia Mundial do Meio Ambiente e desenvolver habilidades de pesquisa.</p>
+
+    <h3>Metodologia Inovadora para o Desenvolvimento da Prática</h3>
+    <p>Aprendizagem baseada na criação de conteúdo digital e aprendizagem colaborativa.</p>
+
+    <h3>Recurso(s) Utilizado(s)</h3>
+    <ul>
+        <li>Chromebooks e tablets com acesso à internet</li>
+        <li>Softwares de design gráfico (Canva e Piktochart)</li>
+        <li>Materiais de papelaria básica: papel, canetas, lápis de cor</li>
+    </ul>
+
+    <h3>Expectativas de Aprendizagem</h3>
+    <p>Espera-se que os discentes, através da aprendizagem desta atividade, desenvolvam a habilidade de interpretar e produzir textos multimodais, como infográficos, fundamentais para a comunicação contemporânea alinhada à BNCC. Busca-se estimular a compreensão crítica sobre questões ambientais, promover a conscientização sobre a relevância da preservação ambiental e favorecer a expressão criativa vinculada a dados concretos.</p>
+
+    <h3>Descrição da Prática em 05 Etapas</h3>
+    <ol>
+        <li><strong>Introdução aos Infográficos:</strong> Aula expositiva dialogada sobre o Dia Mundial do Meio Ambiente, destacando sua importância global e local, com espaço para os alunos compartilharem conhecimentos prévios.</li>
+        <li><strong>Início da Criação dos Infográficos em Grupos:</strong> Explicação inicial para orientar a formação de grupos e a escolha de temas. Cada grupo indicou um responsável por anotar ideias e tarefas enquanto os demais coletavam informações.</li>
+        <li><strong>Planejamento do Infográfico – Coleta de Dados e Síntese:</strong> Orientação para buscar dados necessários e selecionar informações relevantes. Estímulo à análise crítica e troca de informações entre os grupos.</li>
+        <li><strong>Revisão e Atualização do Planejamento dos Infográficos:</strong> Revisão rápida do planejamento, ajustes e compartilhamento de feedbacks entre os grupos.</li>
+        <li><strong>Apresentações em Grupos:</strong> Cada grupo apresentou seu infográfico, explicando escolhas de dados e estratégias de organização visual. O momento permitiu perguntas, comentários e aprimoramento coletivo.</li>
+    </ol>
+    `
+    },
+    "professorAndre": {
+        "nome": "André Ângelo",
+        "titulo": "EcoMar: Conectando Tecnologia e Preservação Oceânica",
+        "conteudo": `
+    <h3>Turma e Modalidade de Ensino</h3>
+    <p><strong>2º ano técnico do ensino médio</strong></p>
+
+    <h3>Objetos de Conhecimento Abordados</h3>
+    <p>Programação básica e integração com sensores e atuadores. Captação de dados ambientais (distância, temperatura, umidade, qualidade da água).</p>
+
+    <h3>Objetivo da Prática</h3>
+    <p>Aprender a usar o Arduino e sensores para criar soluções que ajudem a cuidar dos oceanos, entendendo como a tecnologia pode transformar dados em informações importantes para proteger o meio ambiente.</p>
+
+    <h3>Metodologia Inovadora para o Desenvolvimento da Prática</h3>
+    <p>Aprendizagem Baseada em Projetos (ABP), aliada à abordagem Maker, com foco em experimentação prática e colaboração.</p>
+
+    <h3>Recurso(s) Utilizado(s)</h3>
+    <ul>
+        <li>Arduino</li>
+        <li>Internet</li>
+        <li>Software Edge</li>
+        <li>Sensores e atuadores</li>
+        <li>Computador/Notebook</li>
+    </ul>
+
+    <h3>Expectativas de Aprendizagem</h3>
+    <p>Espera-se que se utilize o Arduino e as tecnologias de IoT (Internet das Coisas) para desenvolver soluções que contribuam para a preservação dos oceanos. Compreender como os sensores podem coletar dados ambientais e transformá-los em informações úteis para proteger o meio ambiente por meio da tecnologia.</p>
+
+    <h3>Descrição da Prática em 05 Etapas</h3>
+    <ol>
+        <li><strong>O que é IoT e Arduino:</strong> Aula expositiva dialogada sobre os conceitos de IoT e a função do Arduino. A turma foi dividida em estações para elaborar uma pesquisa prévia e construir um mapa mental colaborativo digital relacionando IoT e oceano.</li>
+        <li><strong>Sensores e Atuadores (Prática):</strong> Aula prática demonstrando sensores e atuadores, relacionando com sonares de navios e robôs marinhos. Estímulo à compreensão de dados ambientais e à criação de soluções para a preservação oceânica.</li>
+        <li><strong>Aplicações Reais:</strong> Comparação do funcionamento do sonar com tecnologias presentes em carros, drones e casas inteligentes.</li>
+        <li><strong>Sala Maker:</strong> Atividade prática com Arduino e ABP (Desafio: Evitar Colisões). Testes com sensores de sonar para detectar obstáculos, criando analogias com submarinos autônomos e sistemas de navegação embarcados.</li>
+        <li><strong>Criação do Robô:</strong> Desenvolvimento de um robô com peças LEGO, sensores e câmera para identificar resíduos sólidos submersos, coletar o material e transportá-lo até a superfície, contribuindo para a preservação da vida marinha.</li>
+    </ol>
+    `
+    },
+    "professorAllan": {
+        "nome": "Allan Nielsen",
+        "titulo": "Mentes do Futuro: Robótica e Código",
+        "conteudo": `
+    <h3>Turma e Modalidade de Ensino</h3>
+    <p><strong>3º anos do ensino médio</strong></p>
+
+    <h3>Objetos de Conhecimento Abordados</h3>
+    <p>Componentes eletrônicos básicos: sensores, atuadores, motores, placas controladoras Arduino, Micro:bit.</p>
+
+    <h3>Objetivo da Prática</h3>
+    <p>Levar os estudantes a vivenciar, de forma prática, criativa e futurista, o poder transformador da robótica aliada à programação, explorando o papel desses conhecimentos na construção de soluções para o mundo real.</p>
+
+    <h3>Metodologia Inovadora para o Desenvolvimento da Prática</h3>
+    <p>Aprendizagem baseada em problemas (ABP) e estudo de casos, com ênfase na aplicação prática.</p>
+
+    <h3>Recurso(s) Utilizado(s)</h3>
+    <ul>
+        <li>Kits Arduino (UNO ou similar)</li>
+        <li>Cabos USB</li>
+        <li>Protoboard</li>
+        <li>LEDs, resistores, jumpers</li>
+        <li>Computadores com Arduino IDE instalado</li>
+        <li>Projetor multimídia</li>
+        <li>Vídeos introdutórios</li>
+    </ul>
+
+    <h3>Expectativas de Aprendizagem</h3>
+    <p>Almeja-se que os estudantes tenham uma base sólida em eletrônica e programação, que sejam capazes de criar e programar seus próprios projetos no Arduino, que compreendam como ele pode ser utilizado em diversas áreas (como robótica e automação), e consigam aplicar esse conhecimento na criação de soluções práticas.</p>
+
+    <h3>Descrição da Prática</h3>
+    <ol>
+        <li><strong>Identificar os componentes de uma placa Arduino:</strong> Exposição dialogada sobre o Arduino e suas aplicações, utilizando imagens e vídeos para apresentar projetos possíveis e despertar o interesse dos alunos.</li>
+        <li><strong>Montar circuitos simples (como LED piscando):</strong> Demonstração prática da montagem de um circuito básico e programação para acender e piscar um LED, observando a interação entre hardware e software.</li>
+        <li><strong>Compreender e escrever códigos básicos em C/C++:</strong> Introdução à programação no Arduino IDE, explicando conceitos fundamentais da linguagem e aplicação em programas simples.</li>
+        <li><strong>Relacionar conceitos de física, matemática e tecnologia:</strong> Aplicação prática dos conhecimentos de eletricidade, lógica e programação, promovendo uma aprendizagem significativa e conectada à realidade.</li>
+        <li><strong>Aprendizagem baseada em problemas (ABP):</strong> Os alunos recebem um desafio para pensar e criar soluções, aplicando os conhecimentos adquiridos na construção física de um circuito e testando suas ideias.</li>
+    </ol>
+    `
+    },
+    "professoraCarla": {
+        "nome": "Carla Loiola",
+        "titulo": "Oficina de Podcasts: Narrativas da Diversidade",
+        "conteudo": `
+    <h3>Turma e Modalidade de Ensino</h3>
+    <p><strong>1º ano do ensino médio</strong></p>
+
+    <h3>Objetos de Conhecimento Abordados</h3>
+    <p>Compreensão de manifestações culturais e questões raciais.</p>
+
+    <h3>Objetivo da Prática</h3>
+    <p>Promover a elaboração de podcasts pelos alunos do 1º ano do Ensino Médio. Explorar manifestações culturais e questões raciais por meio de aulas teóricas e práticas, em que os alunos aprenderão técnicas de comunicação oral e escrita em inglês, elaborarão roteiros e gravarão episódios com a colaboração da professora de Inglês.</p>
+
+    <h3>Metodologia Inovadora para o Desenvolvimento da Prática</h3>
+    <p>Aprendizagem baseada em produção de conteúdo digital e colaboração ativa entre os alunos.</p>
+
+    <h3>Recurso(s) Utilizado(s)</h3>
+    <ul>
+        <li>Equipamentos de gravação de áudio (Vocaroo, Soundtrap, softwares de edição)</li>
+        <li>Materiais de leitura e guias de escrita</li>
+        <li>Plataformas digitais para compartilhamento dos podcasts</li>
+    </ul>
+
+    <h3>Expectativas de Aprendizagem</h3>
+    <p>Fomentar um ambiente de aprendizagem ativa, incentivando a interculturalidade e o respeito à diversidade. Por meio da produção de podcasts, os estudantes aprimoraram habilidades de comunicação oral e escrita em inglês, desenvolveram competências para o trabalho em equipe e expressaram ideias de forma estruturada e criativa.</p>
+
+    <h3>Descrição da Prática em 05 Etapas</h3>
+    <ol>
+        <li><strong>Introdução às técnicas de comunicação e escrita:</strong> Discussão dialogada sobre a importância da comunicação efetiva em inglês no mundo atual, aplicando em situações cotidianas.</li>
+        <li><strong>Criação e desenvolvimento dos roteiros:</strong> Definição de temas, elaboração dos elementos básicos (introdução, desenvolvimento, conclusão) e identificação do público-alvo.</li>
+        <li><strong>Atividade Mão-na-Massa em Grupos:</strong> Estruturação do podcast com abertura, apresentação dos hosts, conteúdo principal (entrevista, debate ou história) e encerramento.</li>
+        <li><strong>Gravação dos podcasts na sala Maker:</strong> Ensaio, gravação em blocos (abertura, entrevistas, encerramento) e edição final.</li>
+        <li><strong>Reflexão, aprendizado e apresentação:</strong> Audição coletiva dos episódios, feedback colaborativo, aprimoramento das produções e divulgação com QR Codes expostos na escola.</li>
+    </ol>
+    `
+    },
+    "professoraDayara2": {
+        "nome": "Dayara Falqueto",
+        "titulo": "Escape Room - Desvendando os Biomas do Brasil",
+        "conteudo": `
+    <h3>Turma e Modalidade de Ensino</h3>
+    <p><strong>2º ano do ensino médio</strong></p>
+
+    <h3>Objetos de Conhecimento Abordados</h3>
+    <p>Características dos seis biomas, tipos de vegetação predominantes em cada bioma.</p>
+
+    <h3>Objetivo da Prática</h3>
+    <p>Identificar os 6 biomas brasileiros e suas principais características, relacionando o clima, relevo, hidrografia, fauna e flora em cada domínio morfoclimático.</p>
+
+    <h3>Metodologia Inovadora para o Desenvolvimento da Prática</h3>
+    <p>Escape Room</p>
+
+    <h3>Recurso(s) Utilizado(s)</h3>
+    <ul>
+        <li>Materiais Didáticos e Impressos</li>
+        <li>Recursos Digitais</li>
+    </ul>
+
+    <h3>Expectativas de Aprendizagem</h3>
+    <p>Ao final da aula, espera-se que os estudantes sejam capazes de reconhecer os seis biomas brasileiros e suas principais características físicas (vegetação, clima, relevo, solo, hidrografia). Compreender o conceito de domínio morfoclimático e sua importância para a organização do território e identificar a localização e extensão dos biomas no mapa do Brasil.</p>
+
+    <h3>Descrição da Prática em 05 Etapas</h3>
+    <ol>
+        <li><strong>Introdução e Sensibilização:</strong> Apresentar o tema de forma envolvente e despertar o interesse da turma, com breve explicação sobre biomas brasileiros e domínios morfoclimáticos (uso de vídeo curto ou imagens).</li>
+        <li><strong>Apresentação da narrativa do Escape Room:</strong> Explicação da metodologia ativa. Enigma: “Os biomas do Brasil estão ameaçados. Vocês são exploradores encarregados de desvendar enigmas para restaurar o equilíbrio ecológico!”. Divisão em grupos e entrega dos “passaportes dos biomas”.</li>
+        <li><strong>Domínios Morfoclimáticos:</strong> Cada grupo recebe um mapa mudo do Brasil para localizar seu domínio com ficha de pesquisa. Recursos digitais ou impressos com informações geográficas.</li>
+        <li><strong>Leitura e Interpretação de Mapas:</strong> Promover colaboração e comunicação entre alunos, favorecendo o protagonismo e autonomia na aprendizagem.</li>
+        <li><strong>Estações Temáticas (Escape Room – 6 Biomas):</strong> Cada grupo passa por 6 estações (ou baús virtuais/físicos), cada uma representando um bioma. Em cada estação, os alunos resolvem enigmas relacionados ao bioma. Para avançar, desbloqueiam códigos, respondem perguntas ou montam quebra-cabeças.</li>
+    </ol>
+    `
+    },
+    "professoraElisangela": {
+        "nome": "Elisângela Pina",
+        "titulo": "Arquitetura Virtual: Criando uma Cidade Futurista Geométrica",
+        "conteudo": `
+    <h3>Turma e Modalidade de Ensino</h3>
+    <p><strong>9º ano</strong></p>
+
+    <h3>Objetos de Conhecimento Abordados</h3>
+    <p>Geometria, Área e Perímetro.</p>
+
+    <h3>Objetivo da Prática</h3>
+    <p>Promover o desenvolvimento das capacidades dos estudantes como propósito central desta atividade, que integra conceitos teóricos à aplicação prática. A proposta visa à compreensão e à exploração de conceitos geométricos por meio de situações contextualizadas e desafiadoras, incentivando o raciocínio, criatividade e a resolução de problemas.</p>
+
+    <h3>Metodologia Inovadora para o Desenvolvimento da Prática</h3>
+    <p>Integração de matemática aplicada à arquitetura e design urbano, associada ao uso de tecnologias como modelagem 3D, realidade virtual e aumentada.</p>
+
+    <h3>Recurso(s) Utilizado(s)</h3>
+    <ul>
+        <li>Papelão e materiais impressos</li>
+        <li>Impressora</li>
+        <li>Impressora 3D</li>
+        <li>Software de modelagem 3D</li>
+        <li>Dispositivos de Realidade Virtual (VR)</li>
+        <li>Aplicativos de Realidade Aumentada</li>
+    </ul>
+
+    <h3>Expectativas de Aprendizagem</h3>
+    <p>Através de uma abordagem interdisciplinar, a atividade permite que os alunos conectem teorias matemáticas à arquitetura e ao design urbano, estimulando uma aprendizagem mais profunda e crítica. O trabalho em equipe e o uso de metodologias inovadoras incentivam a criatividade, a resolução de problemas e a colaboração.</p>
+
+    <h3>Descrição da Prática em 05 Etapas</h3>
+    <ol>
+        <li><strong>Criação de formas geométricas:</strong> Aula dialogada como revisão, seguida de atividade prática de criação de formas em papelão ou folha A4, aplicando conceitos de área e perímetro.</li>
+        <li><strong>Escolha e Planejamento:</strong> Turma subdividida em grupos para escolher formas geométricas, incluindo ao menos uma tridimensional. Alunos esboçam figuras e calculam área e perímetro.</li>
+        <li><strong>Construção Manual:</strong> Montagem das formas em papelão conforme os esboços, refletindo como poderiam compor uma cidade geométrica.</li>
+        <li><strong>Introdução à Modelagem 3D:</strong> Explicação sobre o funcionamento e importância da modelagem 3D, com demonstração de como transformar formas 2D em 3D.</li>
+        <li><strong>Construção do Modelo:</strong> Alunos começam a construir sua cidade geométrica em software 3D, considerando proporções, simetrias e interligações entre as formas.</li>
+    </ol>
+    `
+    },
+    "professorVinicius": {
+        "nome": "Vinicius Premoli",
+        "titulo": "Programação com Aprendizagem Baseada em Projetos (ABP)",
+        "conteudo": `
+    <h3>Turma e Modalidade de Ensino</h3>
+    <p><strong>3º ano do Ensino Médio</strong></p>
+
+    <h3>Objetos de Conhecimento Abordados</h3>
+    <p>Placa Arduino, Circuitos simples, Códigos básicos em linguagem.</p>
+
+    <h3>Objetivo da Prática</h3>
+    <p>Usar a metodologia ABP para estimular autonomia e pensamento crítico, comunicação entre dispositivos e servidores via redes.</p>
+
+    <h3>Metodologia Inovadora para o Desenvolvimento da Prática</h3>
+    <p>Uso da metodologia de Aprendizagem Baseada em Projetos (ABP), Pensamento Computacional e integração prática de conceitos de programação, eletrônica e redes.</p>
+
+    <h3>Recurso(s) Utilizado(s)</h3>
+    <ul>
+        <li>Kits Arduino (UNO ou similar), cabos USB, protoboard, LEDs, resistores, jumpers</li>
+        <li>Computadores com Arduino IDE instalado</li>
+        <li>Internet</li>
+        <li>Projetor multimídia</li>
+        <li>Vídeos introdutórios</li>
+    </ul>
+
+    <h3>Expectativas de Aprendizagem</h3>
+    <p>Reconhecer os principais protocolos e ferramentas utilizados para monitoramento e segurança de redes sem fio e identificar a estrutura básica de uma aplicação web (cliente, servidor e API) integrando um Arduino para captar dados de sensores e enviá-los via rede para uma interface web.</p>
+
+    <h3>Descrição da Prática em 05 Etapas</h3>
+    <ol>
+        <li><strong>Introdução e Planejamento do Projeto:</strong> Discussão sobre redes sem fio, padrões (802.11), segurança e topologias. Apresentação da metodologia ABP e do projeto.</li>
+        <li><strong>Conceitos básicos de programação web:</strong> Explicação de cliente, servidor e protocolos HTTP/HTTPS com vídeos e slides.</li>
+        <li><strong>Compreender e escrever códigos em C/C++:</strong> Introdução à programação no Arduino IDE, criação de programas simples para interação com hardware.</li>
+        <li><strong>Relacionar conceitos de física, matemática e tecnologia:</strong> Aplicação prática e funcional da teoria da Física e Matemática na construção de soluções tecnológicas.</li>
+        <li><strong>Aprendizagem baseada em problemas (ABP):</strong> Alunos recebem desafios práticos e precisam desenvolver soluções, construindo circuitos e testando ideias.</li>
+    </ol>
+    `
+    },
+    "professorVitor": {
+        "nome": "Vitor Macieira",
+        "titulo": "Escape Room: A Câmara do Humanismo - Uma Viagem no Tempo Literário",
+        "conteudo": `
+    <h3>Turma e Modalidade de Ensino</h3>
+    <p><strong>1º ano do Ensino Médio</strong></p>
+
+    <h3>Objetos de Conhecimento Abordados</h3>
+    <p>Movimentos literários e suas características, contexto histórico e social.</p>
+
+    <h3>Objetivo da Prática</h3>
+    <p>Levar os alunos a explorarem os aspectos históricos, filosóficos do Humanismo português, vivenciando uma experiência interativa e cooperativa que envolva raciocínio, interpretação de texto e análise crítica.</p>
+
+    <h3>Metodologia Inovadora para o Desenvolvimento da Prática</h3>
+    <p>EscapeFo Rnotoem Calibri tamanho 16</p>
+
+    <h3>Recurso(s) Utilizado(s)</h3>
+    <ul>
+        <li>Cartões com pistas e perguntas</li>
+        <li>Relógio para contagem regressiva</li>
+        <li>Elementos visuais (mapas antigos, livros falsos)</li>
+        <li>Chromebooks</li>
+        <li>Tablets</li>
+        <li>QR Codes</li>
+    </ul>
+
+    <h3>Expectativas de Aprendizagem</h3>
+    <ul>
+        <li>Conjecturasse que ao final do escape room através dos conhecimentos literário e contextual.</li>
+        <li>Compreender o Humanismo como movimento de transição entre o teocentrismo medieval e o antropocentrismo renascentista.</li>
+        <li>Identificar as características literários do Humanismo português.</li>
+        <li>Reconhecer produções e autores relevantes.</li>
+    </ul>
+
+    <h3>Descrição da Prática em 05 Etapas</h3>
+    <ol>
+        <li><strong>Dinâmica do Escape Room: "A Câmara do Humanismo":</strong> O professor iniciou a aula e informou o que aconteceria mas antes os estudantes teriam que escolher o seu grupo, feito isso o professor expôs introdução a narrativa. "Vocês foram transportados para o século XV e estão presos na Biblioteca Real de Lisboa. Para voltar ao presente, precisam resolver cinco enigmas deixados por figuras do Humanismo. Cada desafio certo libera uma chave." </li>
+        <li><strong>Vivência nas Estações:</strong> Cada grupo deverá circular entre as cinco estações do Escape Room. Em cada uma, haverá uma atividade ou enigma relacionado aos temas centrais do Humanismo português (ex.: antropocentrismo, crítica social no teatro, crônica histórica, poesia lírica). Os alunos discutem, respondem e registram suas respostas. Cada resposta correta concede uma "chave" simbólica para abrir o "portal do tempo".</li>
+        <li><strong> CENA 1 – A Sala da Mudança de Mundo:</strong> Em uma sala com paredes cobertas por mapas renascentistas e desenhos de corpos humanos, vocês encontram um pergaminho com a seguinte pergunta:  “Qual termo define a mudança do olhar medieval centrado em Deus para a valorização do ser humano, da razão e da experiência?”  Pista: Leonardo da Vinci, estudos sobre o corpo, ciência, filosofia clássica...</li>
+        <li><strong>CENA 2 – O Teatro das Verdades:</strong> "Qual autor português do Humanismo utilizou o teatro como instrumento de crítica social e religiosa?" 🎭 Cenas lembram personagens como o Velho, o Fidalgo, o Frade, o Sapateiro...</li>
+        <li><strong>Culminância:</strong> Aculminância foino Paláciode Anchietana qual foi adicionada ao plano como um evento final especial, envolvendo ambientação histórica, protagonismo estudantil e exposição de produções. </li>
+    </ol>
+    `
     }
 };
 
@@ -567,3 +873,30 @@ setaDireita.addEventListener('click', () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona a seção que queremos animar
+    const secaoAnimada = document.querySelector('.praticas-exitosas');
+
+    // Configurações do observer
+    const options = {
+        root: null, // Observa em relação à viewport
+        rootMargin: '0px',
+        threshold: 0.2 // A animação começa quando 20% da seção estiver visível
+    };
+
+    // Cria o observer
+    const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+            // Se a seção está visível
+            if (entry.isIntersecting) {
+                // Adiciona a classe 'visible' para ativar a animação do CSS
+                secaoAnimada.classList.add('visible');
+                // Para a observação depois de animar uma vez
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    // Inicia a observação da seção
+    observer.observe(secaoAnimada);
+});

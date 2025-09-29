@@ -1298,3 +1298,128 @@ button {
         display: none;
     }
 }
+
+/* Estilo geral da seção */
+.praticas-exitosas {
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Garante que os elementos animados não "vazem" */
+    margin: 60px 0; /* Espaçamento vertical */
+}
+
+.praticas-exitosas .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f39c12; /* Cor de fundo laranja principal */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Coluna da Esquerda (Laranja) */
+.coluna-esquerda {
+    flex-basis: 55%; /* Ocupa 55% da largura */
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-principal h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.texto-principal h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.logos-esquerda {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logos-esquerda .edicao {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.logos-esquerda .logo-ar {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: 120px;
+    margin-right: auto; /* Empurra o logo Cefope para a direita */
+}
+
+.logos-esquerda .logo-cefope {
+    width: 80px; /* Ajuste o tamanho conforme necessário */
+    align-self: flex-end; /* Alinha na parte de baixo */
+}
+
+
+/* Coluna da Direita (Azul) */
+.coluna-direita {
+    flex-basis: 45%; /* Ocupa 45% da largura */
+    background-color: #0d2c54; /* Cor de fundo azul escura */
+    /* Para o padrão, o ideal é usar uma imagem de fundo */
+    background-image: url('caminho/para/seu/padrao-fundo-azul.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.coluna-direita .logo-escola-futuro {
+    max-width: 90%;
+    height: auto;
+}
+
+
+/* --- ANIMAÇÃO DE APARECIMENTO --- */
+
+/* Estado inicial dos elementos (antes de aparecer) */
+.praticas-exitosas .coluna-esquerda,
+.praticas-exitosas .coluna-direita {
+    opacity: 0; /* Começa invisível */
+    transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+.praticas-exitosas .coluna-esquerda {
+    transform: translateX(-50px); /* Começa um pouco à esquerda */
+}
+
+.praticas-exitosas .coluna-direita {
+    transform: translateX(50px); /* Começa um pouco à direita */
+}
+
+/* Estado final dos elementos (quando a classe 'visible' é adicionada via JS) */
+.praticas-exitosas.visible .coluna-esquerda,
+.praticas-exitosas.visible .coluna-direita {
+    opacity: 1; /* Torna-se visível */
+    transform: translateX(0); /* Volta à posição original */
+}
+
+
+/* --- RESPONSIVIDADE PARA CELULARES --- */
+@media (max-width: 768px) {
+    .praticas-exitosas .container {
+        flex-direction: column; /* Colunas ficam uma em cima da outra */
+    }
+
+    .texto-principal h1 {
+        font-size: 2.2rem;
+    }
+
+    .texto-principal h2 {
+        font-size: 1.2rem;
+    }
+}
