@@ -618,68 +618,6 @@ footer.footer-content {
     overflow: hidden;
 }
 
-.galeria {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.galeria a {
-    display: inline-block;
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-    transition: transform 0.3s ease;
-}
-
-.galeria a:hover {
-    transform: scale(1.05);
-}
-
-.galeria img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Frase em loop */
-.loop-frase {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 50px;
-    background: #003366;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-.frase {
-    display: flex;
-    white-space: nowrap;
-    animation: loopScroll 15s linear infinite;
-}
-
-.frase span {
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-right: 2rem;
-    /* ou menos, teste com 1rem */
-}
-
-@keyframes loopScroll {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-33.33%);
-    }
-}
-
 #main {
     background: #fff;
     padding: 2rem;
@@ -1228,6 +1166,47 @@ button {
     transform: translateX(0); /* Volta à posição original */
 }
 
+/* Estilo para o container principal da galeria */
+.galeria {
+    display: flex; /* ATIVA O FLEXBOX! Isso permite alinhar os itens. */
+    flex-wrap: wrap; /* ESSA É A PROPRIEDADE MÁGICA! Permite que os itens quebrem para a próxima linha. */
+    justify-content: center; /* Centraliza os itens na linha. */
+    gap: 30px; /* Cria um espaço de 30px entre cada item da galeria. */
+    list-style: none; /* Remove qualquer marcador de lista, se aplicável. */
+}
+
+/* Estilo para cada "card" (imagem + título) */
+.item-galeria {
+    background-color: #f9f9f9; /* Uma cor de fundo suave para o card. */
+    border-radius: 10px; /* Deixa as bordas do card arredondadas. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade. */
+    width: 280px; /* Largura fixa para cada card. */
+    text-align: center; /* Centraliza todo o conteúdo dentro do card, incluindo a imagem e o texto. */
+    overflow: hidden; /* Garante que a imagem não "vaze" das bordas arredondadas. */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de hover. */
+}
+
+/* Efeito de "levantar" o card quando o mouse passa por cima */
+.item-galeria:hover {
+    transform: translateY(-5px); /* Move o card 5px para cima. */
+}
+
+/* Estilo para a imagem dentro do card */
+.item-galeria img {
+    max-width: 100%; /* Garante que a imagem se ajuste à largura do card. */
+    height: auto; /* Mantém a proporção da imagem. */
+    display: block; /* Remove qualquer espaço extra abaixo da imagem. */
+    cursor: pointer; /* Muda o cursor para uma "mãozinha" para indicar que é clicável. */
+}
+
+/* Estilo para o título do projeto */
+.titulo-projeto {
+    font-size: 1rem; /* Tamanho da fonte. */
+    font-weight: 600; /* Deixa a fonte um pouco mais forte (semi-bold). */
+    color: #333; /* Cor do texto. */
+    padding: 15px 10px; /* Espaçamento interno (15px em cima/baixo, 10px nas laterais). */
+    margin: 0; /* Remove a margem padrão do parágrafo. */
+}
 
 /* --- RESPONSIVIDADE PARA CELULARES --- */
 @media (max-width: 768px) {
