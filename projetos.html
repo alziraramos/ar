@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site escolar completo com notícias, projetos, equipe, turmas e calendário">
+    <title>Projetos</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
+        type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
+                    alt="Logo" class="navbar-logo">
+                <span class="navbar-title">EEEFM Alzira Ramos</span>
+            </a>
+
+            <ul class="navbar-nav" id="navbarNav">
+                <li><a href="index.html#noticias" class="nav-link">Notícias</a></li>
+                <li><a href="index.html#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="index.html#equipe" class="nav-link">Equipe</a></li>
+                <li><a href="index.html#turmas" class="nav-link">Turmas</a></li>
+                <li><a href="index.html#calendario" class="nav-link">Calendário</a></li>
+                <li><a href="index.html#video" class="nav-link">Vida Marinha</a></li>
+                <li><a href="index.html#contato" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <h1>Práticas Exitosas</h1>
+        <h2>Para uma educação inovadora</h2>
+        <div class="galeria">
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/deborapadlet.png"
+                onclick="selecionarProjeto('professoraDebora')" alt="Projeto 1" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/wladimirpadlet.png"
+                onclick="selecionarProjeto('professorWladimir')" alt="Projeto 2" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/grazianipadlet.png"
+                onclick="selecionarProjeto('professorGraziani')" alt="Projeto 3" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/dayarapadlet.png"
+                onclick="selecionarProjeto('professoraDayara')" alt="Projeto 4" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/leonardogeopadlet.png"
+                onclick="selecionarProjeto('professorLeonardo')" alt="Projeto 5" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/jozipadlet.png"
+                onclick="selecionarProjeto('professoraJozi')" alt="Projeto 6" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/atilapadlet.png"
+                onclick="selecionarProjeto('professorAtila')" alt="Projeto 7" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/dayarapadlet2.png"
+                onclick="selecionarProjeto('professoraDayara2')" alt="Projeto 8" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/vitorpadlet.png"
+                onclick="selecionarProjeto('professorVitor')" alt="Projeto 9" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/viniciuspadlet.png"
+                onclick="selecionarProjeto('professorVinicius')" alt="Projeto 10" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/elisangelapadlet.png"
+                onclick="selecionarProjeto('professoraElisangela')" alt="Projeto 11" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/carlapadlet.png"
+                onclick="selecionarProjeto('professoraCarla')" alt="Projeto 12" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/allanpadlet.png"
+                onclick="selecionarProjeto('professorAllan')" alt="Projeto 13" />
+            <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/andrepadlet.png"
+                onclick="selecionarProjeto('professorAndre')" alt="Projeto 14" />
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        function selecionarProjeto(id) {
+            localStorage.setItem("projetoSelecionado", id);
+            window.location.href = "padlet.html";
+        }
+    </script>
+</body>
+<footer class="footer-content">
+    <div class="footer-text">
+        <p>Desenvolvido pelos alunos da EEEFM Alzira Ramos</p>
+    </div>
+    <div class="footer-links-container">
+        <ul class="footer-links">
+            <li><a href="index.html#">Início</a></li>
+            <li><a href="index.html#noticias">Notícias</a></li>
+            <li><a href="index.html#projetos">Projetos</a></li>
+            <li><a href="index.html#equipe">Equipe</a></li>
+        </ul>
+        <ul class="footer-links">
+            <li><a href="index.html#turmas">Turmas</a></li>
+            <li><a href="index.html#calendario">Calendário</a></li>
+            <li><a href="index.html#video">Vida Marinha</a></li>
+            <li><a href="index.html#contato">Contatos</a></li>
+        </ul>
+    </div>
+</footer>
+
+</html>

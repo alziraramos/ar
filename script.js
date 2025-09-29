@@ -873,30 +873,3 @@ setaDireita.addEventListener('click', () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Seleciona a seção que queremos animar
-    const secaoAnimada = document.querySelector('.praticas-exitosas');
-
-    // Configurações do observer
-    const options = {
-        root: null, // Observa em relação à viewport
-        rootMargin: '0px',
-        threshold: 0.2 // A animação começa quando 20% da seção estiver visível
-    };
-
-    // Cria o observer
-    const observer = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(entry => {
-            // Se a seção está visível
-            if (entry.isIntersecting) {
-                // Adiciona a classe 'visible' para ativar a animação do CSS
-                secaoAnimada.classList.add('visible');
-                // Para a observação depois de animar uma vez
-                observer.unobserve(entry.target);
-            }
-        });
-    }, options);
-
-    // Inicia a observação da seção
-    observer.observe(secaoAnimada);
-});

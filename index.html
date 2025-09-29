@@ -127,50 +127,7 @@
         </div>
     </section>
 
-    <section class="projetos section" id="projetos">
-        <div class="container-projetos">
-            <div class="galeria">
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/deborapadlet.png"
-                    onclick="selecionarProjeto('professoraDebora')" alt="Projeto 1" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/wladimirpadlet.png"
-                    onclick="selecionarProjeto('professorWladimir')" alt="Projeto 2" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/grazianipadlet.png"
-                    onclick="selecionarProjeto('professorGraziani')" alt="Projeto 3" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/dayarapadlet.png"
-                    onclick="selecionarProjeto('professoraDayara')" alt="Projeto 4" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/leonardogeopadlet.png"
-                    onclick="selecionarProjeto('professorLeonardo')" alt="Projeto 5" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/jozipadlet.png"
-                    onclick="selecionarProjeto('professoraJozi')" alt="Projeto 6" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/atilapadlet.png"
-                    onclick="selecionarProjeto('professorAtila')" alt="Projeto 7" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/dayarapadlet2.png"
-                    onclick="selecionarProjeto('professoraDayara2')" alt="Projeto 8" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/vitorpadlet.png"
-                    onclick="selecionarProjeto('professorVitor')" alt="Projeto 9" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/viniciuspadlet.png"
-                    onclick="selecionarProjeto('professorVinicius')" alt="Projeto 10" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/elisangelapadlet.png"
-                    onclick="selecionarProjeto('professoraElisangela')" alt="Projeto 11" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/carlapadlet.png"
-                    onclick="selecionarProjeto('professoraCarla')" alt="Projeto 12" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/allanpadlet.png"
-                    onclick="selecionarProjeto('professorAllan')" alt="Projeto 13" />
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/andrepadlet.png"
-                    onclick="selecionarProjeto('professorAndre')" alt="Projeto 14" />
-            </div>
-        </div>
-
-        <div class="loop-frase">
-            <div class="frase">
-                <span>Projetos Inovadores • Equipe Dedicada • Projetos Inovadores • Equipe Dedicada • Projetos
-                    Inovadores • Equipe Dedicada • Projetos Inovadores • Equipe Dedicada • Projetos Inovadores • Equipe
-                    Dedicada •</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="praticas-exitosas">
+    <section class="projetos section praticas-exitosas" id="projetos">
         <div class="container">
             <div class="coluna-esquerda">
                 <div class="conteudo-esquerda">
@@ -180,15 +137,16 @@
                     </div>
                     <div class="logos-esquerda">
                         <span class="edicao">4ª edição</span>
-                        <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png" alt="Logo EEEFM Alzira Ramos" class="logo-ar">
+                        <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logoar.png"
+                            alt="Logo EEEFM Alzira Ramos" class="logo-ar">
                         <img src="caminho/para/seu/logo-cefope.png" alt="Logo Cefope" class="logo-cefope">
                     </div>
                 </div>
             </div>
 
             <div class="coluna-direita">
-                <img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logofuturo.png" alt="Certificação Escola do Futuro"
-                    class="logo-escola-futuro">
+                <a href="projetos.html"><img src="https://raw.githubusercontent.com/alziraramos/alziraramos/refs/heads/main/img/logofuturo.png"
+                    alt="Certificação Escola do Futuro" class="logo-escola-futuro"></a>
             </div>
         </div>
     </section>
@@ -404,10 +362,33 @@
 
     <script src="script.js"></script>
     <script>
-        function selecionarProjeto(id) {
-            localStorage.setItem("projetoSelecionado", id);
-            window.location.href = "padlet.html";
-        }
+        document.addEventListener("DOMContentLoaded", function () {
+            // Seleciona a seção que queremos animar
+            const secaoAnimada = document.querySelector('.praticas-exitosas');
+
+            // Configurações do observer
+            const options = {
+                root: null, // Observa em relação à viewport
+                rootMargin: '0px',
+                threshold: 0.2 // A animação começa quando 20% da seção estiver visível
+            };
+
+            // Cria o observer
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    // Se a seção está visível
+                    if (entry.isIntersecting) {
+                        // Adiciona a classe 'visible' para ativar a animação do CSS
+                        secaoAnimada.classList.add('visible');
+                        // Para a observação depois de animar uma vez
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            // Inicia a observação da seção
+            observer.observe(secaoAnimada);
+        });
     </script>
 </body>
 <footer class="footer-content">
